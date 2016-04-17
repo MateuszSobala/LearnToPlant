@@ -7,14 +7,14 @@
         ['$scope', '$rootScope', 'workFactory', workController]);
 
     function workController($scope, $rootScope, workFactory) {
-        $scope.stage = [];
-        /*
-        imageFactory.getWorkArea().success(function (data) {
-            $scope.stage = data;
+        $rootScope.plant = {};
+        $rootScope.level = 1;
+        
+        workFactory.getWorkArea($rootScope.level).success(function (data) {
+            $rootScope.plant = data;
+            console.log($rootScope.plant);
         }).error(function (error) {
             // log errors
         });
-        */
-        $rootScope.level = 1;
     }
 })();

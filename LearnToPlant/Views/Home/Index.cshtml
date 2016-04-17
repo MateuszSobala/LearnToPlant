@@ -4,18 +4,14 @@
 @section Scripts {
 <script src="~/js/services/workFactory.js"></script>
 <script src="~/js/services/imageFactory.js"></script>
-<script src="~/js/services/imageService.js"></script>
+<script src="~/js/services/actionFactory.js"></script>
 <script src="~/js/controllers/workController.js"></script>
 <script src="~/js/controllers/lessonsController.js"></script>
 <script src="~/js/controllers/toolsController.js"></script>
+<script src="~/js/controllers/actionsController.js"></script>
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
-<div id="container">
+<div id="container" ng-controller="actionsController">
     <div id="lessons" ng-controller="lessonsController">
         <ul>
             <li ng-repeat="image in images">
@@ -28,13 +24,16 @@
 
         </div>
         <div id="plant">
-
+            <div ng-model="plant">
+                {{plant.Substrate.Humidity}}
+            </div>
         </div>
     </div>
     <div id="tools" ng-controller="toolsController">
         <ul>
             <li ng-repeat="image in images">
-                <img ng-src="{{image.Path}}" />
+                <p>{{image.Description}}</p>
+                <img ng-src="{{image.Path}}" ng-click="handleAction(image.Action, image.Value)"/>
             </li>
         </ul>  
     </div>

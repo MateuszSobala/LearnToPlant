@@ -31,7 +31,8 @@ namespace LearnToPlant.Models
             string directoryOfImage = HttpContext.Current.Server.MapPath("~/Images/");
             XDocument imageData = XDocument.Load(directoryOfImage + @"/ImageMetaData.xml");
             var images = from image in imageData.Descendants("image")
-                         select new Image(image.Element("filename").Value, image.Element("description").Value, int.Parse(image.Element("level").Value), image.Element("component").Value);
+                         select new Image(image.Element("filename").Value, image.Element("description").Value, int.Parse(image.Element("level").Value), image.Element("component").Value,
+                         image.Element("action").Value, int.Parse(image.Element("value").Value));
             AddRange(images.Where(i => i.Level == level && i.Component.Equals(component)).ToList());
         }
     }

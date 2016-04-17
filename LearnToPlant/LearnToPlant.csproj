@@ -174,16 +174,26 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\ActionsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ImageController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\WorkController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Actions.cs" />
+    <Compile Include="Models\DiseaseType.cs" />
     <Compile Include="Models\Image.cs" />
     <Compile Include="Models\ImageModel.cs" />
+    <Compile Include="Models\Plant.cs" />
     <Compile Include="Models\PlantDbContext.cs" />
     <Compile Include="Models\PlantDbInitializer.cs" />
+    <Compile Include="Models\Pot.cs" />
+    <Compile Include="Models\SoilType.cs" />
+    <Compile Include="Models\Substrate.cs" />
+    <Compile Include="Models\WeedType.cs" />
+    <Compile Include="Models\WormType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -217,9 +227,11 @@
     <Content Include="Images\ziarna_kukurydzy.jpg" />
     <Content Include="Images\znak_zapytania.jpg" />
     <Content Include="js\app.js" />
+    <Content Include="js\controllers\actionsController.js" />
     <Content Include="js\controllers\lessonsController.js" />
     <Content Include="js\controllers\toolsController.js" />
     <Content Include="js\controllers\workController.js" />
+    <Content Include="js\services\actionFactory.js" />
     <Content Include="js\services\imageService.js" />
     <Content Include="js\services\imageFactory.js" />
     <Content Include="js\services\workFactory.js" />

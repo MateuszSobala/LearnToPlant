@@ -8,8 +8,12 @@
 
     function workFactory($http) {
 
-        function getWorkArea() {
-            return $http.get('/api/WorkArea/');
+        function getWorkArea(level) {
+            return $http({
+                url: '/api/Work',
+                method: "GET",
+                params: { "level": level }
+            });
         }
 
         var service = {
