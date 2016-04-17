@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<images>
+  <image>
+    <filename>konewka.jpg</filename>
+    <description>Konewka</description>
+    <level>1</level>
+    <component>tools</component>
+  </image>
+  <image>
+    <filename>preparat.jpg</filename>
+    <description>Preparat chemiczny</description>
+    <level>1</level>
+    <component>tools</component>
+  </image>
+  <image>
+    <filename>ziarna_kukurydzy.jpg</filename>
+    <description>Ziarna kukurydzy</description>
+    <level>1</level>
+    <component>tools</component>
+  </image>
+  <image>
+    <filename>small_mario.png</filename>
+    <description>Mały Mario</description>
+    <level>1</level>
+    <component>lessons</component>
+  </image>
+  <image>
+    <filename>znak_zapytania.jpg</filename>
+    <description>Znak Zapytania</description>
+    <level>1</level>
+    <component>lessons</component>
+  </image>
+  <image>
+    <filename>znak_zapytania.jpg</filename>
+    <description>Znak Zapytania</description>
+    <level>1</level>
+    <component>lessons</component>
+  </image>
+</images>

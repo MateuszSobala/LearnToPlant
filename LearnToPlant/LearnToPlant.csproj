@@ -139,9 +139,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="js\controllers\" />
     <Folder Include="js\directives\" />
-    <Folder Include="js\services\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -177,10 +175,13 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ImageController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Image.cs" />
+    <Compile Include="Models\ImageModel.cs" />
     <Compile Include="Models\PlantDbContext.cs" />
     <Compile Include="Models\PlantDbInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -194,7 +195,21 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\common\broken.png" />
+    <Content Include="Images\common\loading.gif" />
+    <Content Include="Images\ImageMetaData.xml" />
+    <Content Include="Images\konewka.jpg" />
+    <Content Include="Images\preparat.jpg" />
+    <Content Include="Images\small_mario.png" />
+    <Content Include="Images\ziarna_kukurydzy.jpg" />
+    <Content Include="Images\znak_zapytania.jpg" />
     <Content Include="js\app.js" />
+    <Content Include="js\controllers\lessonsController.js" />
+    <Content Include="js\controllers\toolsController.js" />
+    <Content Include="js\controllers\workController.js" />
+    <Content Include="js\services\imageService.js" />
+    <Content Include="js\services\imageFactory.js" />
+    <Content Include="js\services\workFactory.js" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />

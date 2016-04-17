@@ -15,3 +15,47 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.is-loading {
+  background-color: black;
+  background-image: url('../Images/common/loading.gif');
+}
+
+.is-broken {
+  background-image: url('../Images/common/broken.png');
+  background-color: #be3730;
+  width: 120px;
+}
+
+.is-loading img,
+.is-broken img {
+  opacity: 0;
+}
+
+.lessons ul {
+    text-align: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lessons ul img {
+    height: 100px;
+    width: 100px;
+    stroke: black;
+    stroke-width: 2px;
+}
+
+.tools ul {
+    text-align: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tools ul img {
+    height: 100px;
+    width: 100px;
+    stroke: black;
+    stroke-width: 2px;
+}
