@@ -32,28 +32,25 @@ textarea {
   opacity: 0;
 }
 
-.lessons ul {
+#lessons ul {
     text-align: left;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.lessons ul img {
-    height: 100px;
-    width: 100px;
-    stroke: black;
-    stroke-width: 2px;
+#container div {
+    float: left;
 }
 
-.tools ul {
+#tools ul {
     text-align: right;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.tools ul img {
+ul img {
     height: 100px;
     width: 100px;
     stroke: black;
