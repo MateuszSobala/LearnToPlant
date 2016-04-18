@@ -80,4 +80,12 @@
     <action></action>
     <value>0</value>
   </image>
+  <image>
+    <filename>doniczka.svg</filename>
+    <description>doniczka</description>
+    <level>1</level>
+    <component>work</component>
+    <action></action>
+    <value>0</value>
+  </image>
 </images>

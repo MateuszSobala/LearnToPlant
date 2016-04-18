@@ -17,11 +17,11 @@ textarea {
 }
 
 #welcome {
-    position: relative;
+    /*position: relative;*/
 }
 
 #tutorial {
-    position: absolute;
+    /*position: absolute;*/
     left: 0;
     right: 0;
     margin-left: auto;
@@ -29,29 +29,26 @@ textarea {
     top: 10%;
 }
 
-div.lewo {
-    position: absolute;
+.lewo {
+    /*position: absolute;*/
     left: 0;
     top: 30%;
 }
 
-div.prawo {
-    position: absolute;
-    right: 0;
-    top: 30%;
+.prawo {
+    position: relative;
+    left: 76%;
 }
 
-div.srodek {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
+.srodek {
+    /*position: absolute;*/
     top: 30%;
+    margin: auto;
+    width: 20%;
 }
 
 #cont {
-    position: relative;
+    /*position: absolute;*/
 }
 
 .is-loading {
@@ -135,5 +132,13 @@ img.arrow {
   width: 150px;
   height: 150px;
   padding: 10px;
-  border: 1px solid #1a1a1a;
+}
+
+#tutorial {
+    margin: auto;
+    width: 60%;
+    
+    border-radius: 15px;
+    border: 2px solid black;
+    padding: 10px; 
 }
