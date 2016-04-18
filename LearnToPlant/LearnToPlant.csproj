@@ -207,6 +207,7 @@
     <Content Include="Global.asax" />
     <Content Include="Images\chmura.svg" />
     <Content Include="Images\common\broken.png" />
+    <Content Include="Images\common\down-arrow-icon.png" />
     <Content Include="Images\common\loading.gif" />
     <Content Include="Images\deszcz.svg" />
     <Content Include="Images\doniczka.svg" />
@@ -231,6 +232,7 @@
     <Content Include="js\controllers\lessonsController.js" />
     <Content Include="js\controllers\toolsController.js" />
     <Content Include="js\controllers\workController.js" />
+    <Content Include="js\pop-up.js" />
     <Content Include="js\services\actionFactory.js" />
     <Content Include="js\services\imageService.js" />
     <Content Include="js\services\imageFactory.js" />

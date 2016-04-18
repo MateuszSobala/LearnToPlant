@@ -1,7 +1,8 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Learn To Plant!";
 }
 @section Scripts {
+<script src="~/js/pop-up.js"></script>
 <script src="~/js/services/workFactory.js"></script>
 <script src="~/js/services/imageFactory.js"></script>
 <script src="~/js/services/actionFactory.js"></script>
@@ -10,31 +11,48 @@
 <script src="~/js/controllers/toolsController.js"></script>
 <script src="~/js/controllers/actionsController.js"></script>
 }
-
-<div id="container" ng-controller="actionsController">
-    <div id="lessons" ng-controller="lessonsController">
-        <ul>
-            <li ng-repeat="image in images">
-                <img ng-src="{{image.Path}}" />
-            </li>
-        </ul>  
-    </div>
-    <div id="workArea" ng-controller="workController">
-        <div id="notifications">
-
+<div>
+    <div id="welcome" class="popup">
+        <h3 id="tutorial"></h3>
+        <div class="popup lewo">
+            <img class="arrow" src="~/Images/common/down-arrow-icon.png" />
         </div>
-        <div id="plant">
-            <div ng-model="plant">
-                {{plant.Substrate.Humidity}}
+        <div class="popup srodek">
+            <img class="arrow" src="~/Images/common/down-arrow-icon.png" />
+        </div>
+        <div class="popup prawo">
+            <img class="arrow" src="~/Images/common/down-arrow-icon.png" />
+        </div>
+    </div>
+    <div id="cont" ng-controller="actionsController">
+
+        <div id="lessons" class="main lewo" ng-controller="lessonsController">
+            <ul>
+                <li ng-repeat="image in images">
+                    <img ng-src="{{image.Path}}" />
+                </li>
+            </ul>
+        </div>
+
+        <div id="workArea" class="main srodek" ng-controller="workController">
+            <div id="notifications">
+
+            </div>
+            <div id="plant">
+                <div ng-model="plant">
+                    {{plant.Substrate.Humidity}}
+                </div>
             </div>
         </div>
+
+        <div id="tools" class="main prawo" ng-controller="toolsController">
+            <ul>
+                <li ng-repeat="image in images">
+                    <p>{{image.Description}}</p>
+                    <img ng-src="{{image.Path}}" ng-click="handleAction(image.Action, image.Value)" />
+                </li>
+            </ul>
+        </div>
     </div>
-    <div id="tools" ng-controller="toolsController">
-        <ul>
-            <li ng-repeat="image in images">
-                <p>{{image.Description}}</p>
-                <img ng-src="{{image.Path}}" ng-click="handleAction(image.Action, image.Value)"/>
-            </li>
-        </ul>  
-    </div>
+
 </div>

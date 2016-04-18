@@ -16,6 +16,44 @@ textarea {
     max-width: 280px;
 }
 
+#welcome {
+    position: relative;
+}
+
+#tutorial {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10%;
+}
+
+div.lewo {
+    position: absolute;
+    left: 0;
+    top: 30%;
+}
+
+div.prawo {
+    position: absolute;
+    right: 0;
+    top: 30%;
+}
+
+div.srodek {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30%;
+}
+
+#cont {
+    position: relative;
+}
+
 .is-loading {
   background-color: black;
   background-image: url('../Images/common/loading.gif');
@@ -55,4 +93,22 @@ ul img {
     width: 100px;
     stroke: black;
     stroke-width: 2px;
+}
+
+/* HOVER STYLES */
+div.popup {
+  display: none;
+  width: 280px;
+  padding: 10px;
+  background: #eeeeee;
+  color: #000000;
+  border: 1px solid #1a1a1a;
+  font-size: 90%;
+}
+
+img.arrow {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #1a1a1a;
 }
