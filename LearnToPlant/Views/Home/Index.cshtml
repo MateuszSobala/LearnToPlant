@@ -28,7 +28,7 @@
 
     <div id="container" ng-controller="actionsController">
         <div class="col-md-4">
-            <div class="lessons" ng-controller="lessonsController">
+            <div id="lessons" ng-controller="lessonsController">
                 <ul>
                     <li ng-repeat="image in images">
                         <p>{{image.Description}}</p>
@@ -55,7 +55,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="tools" ng-controller="toolsController">
+            <div id="tools" ng-controller="toolsController">
                 <ul>
                     <li ng-repeat="image in images">
                         <p>{{image.Description}}</p>
@@ -65,3 +65,4 @@
             </div>
         </div>
     </div>
+</div>
