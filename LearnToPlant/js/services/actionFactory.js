@@ -9,7 +9,7 @@
     function actionFactory($http) {
 
         function handleAction(plant, action, value) {
-            console.log(data);
+            //console.log(data);
             return $http({
                 url: '/api/Actions',
                 method: "POST",

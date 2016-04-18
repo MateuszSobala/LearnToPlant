@@ -211,9 +211,7 @@
     <Content Include="Images\deszcz.svg" />
     <Content Include="Images\doniczka.svg" />
     <Content Include="Images\doniczka_2.svg" />
-    <Content Include="Images\ImageMetaData.xml">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="Images\ImageMetaData.xml" />
     <Content Include="Images\info.svg" />
     <Content Include="Images\konewka.jpg" />
     <Content Include="Images\konewka.svg" />
@@ -223,14 +221,21 @@
     <Content Include="Images\nozyce.svg" />
     <Content Include="Images\owad.svg" />
     <Content Include="Images\pomidor.svg" />
+<<<<<<< Updated upstream
+    <Content Include="Images\preparat.jpg" />
+=======
     <Content Include="Images\preparat.svg" />
+>>>>>>> Stashed changes
     <Content Include="Images\slonce.svg" />
     <Content Include="Images\small_mario.png" />
     <Content Include="Images\ziarna_kukurydzy.jpg" />
     <Content Include="Images\znak_zapytania.jpg" />
     <Content Include="js\app.js" />
+<<<<<<< Updated upstream
     <Content Include="js\controllers\actionsController.js" />
+=======
     <Content Include="js\controllers\environmentController.js" />
+>>>>>>> Stashed changes
     <Content Include="js\controllers\lessonsController.js" />
     <Content Include="js\controllers\toolsController.js" />
     <Content Include="js\controllers\workController.js" />

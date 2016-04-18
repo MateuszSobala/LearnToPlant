@@ -37,13 +37,21 @@ textarea {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+<<<<<<< Updated upstream
+#container div {
+    float: left;
+=======
+.lessons ul img {
+    height: 100px;
+    width: 100px;
+    stroke: black;
+    stroke-width: 2px;
 
     transition: 0.5s;
     transition-timing-function: ease;
-}
-
-#container div {
-    float: left;
+>>>>>>> Stashed changes
 }
 
 #tools ul {
@@ -65,10 +73,6 @@ ul img {
     
     transition: 0.5s;
     transition-timing-function: ease;
-}
-
-ul img:active {
-    background: #e66862;
 }
 
 .tools ul img:hover{

@@ -32,28 +32,31 @@ textarea {
   opacity: 0;
 }
 
-#lessons ul {
+.lessons ul {
     text-align: left;
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.lessons ul img {
+    height: 100px;
+    width: 100px;
+    stroke: black;
+    stroke-width: 2px;
 
     transition: 0.5s;
     transition-timing-function: ease;
 }
 
-#container div {
-    float: left;
-}
-
-#tools ul {
+.tools ul {
     text-align: right;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-ul img {
+.tools ul img {
     height: 100px;
     width: 100px;
     stroke: black;
@@ -65,10 +68,6 @@ ul img {
     
     transition: 0.5s;
     transition-timing-function: ease;
-}
-
-ul img:active {
-    background: #e66862;
 }
 
 .tools ul img:hover{

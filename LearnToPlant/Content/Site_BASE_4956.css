@@ -32,51 +32,30 @@ textarea {
   opacity: 0;
 }
 
-#lessons ul {
+.lessons ul {
     text-align: left;
     list-style-type: none;
     margin: 0;
     padding: 0;
-
-    transition: 0.5s;
-    transition-timing-function: ease;
 }
 
-#container div {
-    float: left;
+.lessons ul img {
+    height: 100px;
+    width: 100px;
+    stroke: black;
+    stroke-width: 2px;
 }
 
-#tools ul {
+.tools ul {
     text-align: right;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-ul img {
+.tools ul img {
     height: 100px;
     width: 100px;
     stroke: black;
     stroke-width: 2px;
-
-    border-radius: 15px;
-    border: 2px solid black;
-    padding: 10px; 
-    
-    transition: 0.5s;
-    transition-timing-function: ease;
-}
-
-ul img:active {
-    background: #e66862;
-}
-
-.tools ul img:hover{
-    width: 120px;
-    height:120px;
-}
-
-.lessons ul img:hover{
-    width: 120px;
-    height: 120px;
 }

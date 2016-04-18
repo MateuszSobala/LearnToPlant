@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section Scripts {
+<script src="~/js/services/workFactory.js"></script>
+<script src="~/js/services/imageFactory.js"></script>
+<script src="~/js/services/actionFactory.js"></script>
+<script src="~/js/controllers/workController.js"></script>
+<script src="~/js/controllers/lessonsController.js"></script>
+<script src="~/js/controllers/toolsController.js"></script>
+<<<<<<< Updated upstream
+<script src="~/js/controllers/actionsController.js"></script>
+}
+
+<div id="container" ng-controller="actionsController">
+    <div id="lessons" ng-controller="lessonsController">
+        <ul>
+            <li ng-repeat="image in images">
+=======
+<script src="~/js/controllers/environmentController.js"></script>
+}
+<div class="col-md-4">
+    <div class="lessons" ng-controller="lessonsController">
+        <ul>
+            <li ng-repeat="image in images">
+                <h3>{{image.Description}}</h3>
+>>>>>>> Stashed changes
+                <img ng-src="{{image.Path}}" />
+            </li>
+        </ul>
+        <button ng-click="show()">TEST</button>  
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="environmentArea" ng-controller="environmentController">
+        <span ng-repeat="image in images" class="environment" id="{{$index}}">
+            <img ng-src="{{image.Path}}"/>
+        </span>
+    </div>
+    <div id="workArea" ng-controller="workController">
+        <div id="notifications">
+
+        </div>
+        <div id="plant">
+            <div ng-model="plant">
+                {{plant.Substrate.Humidity}}
+            </div>
+        </div>
+    </div>
+<<<<<<< Updated upstream
+    <div id="tools" ng-controller="toolsController">
+        <ul>
+            <li ng-repeat="image in images">
+                <p>{{image.Description}}</p>
+                <img ng-src="{{image.Path}}" ng-click="handleAction(image.Action, image.Value)"/>
+            </li>
+        </ul>  
+    </div>
+</div>
+=======
+</div>
+<div class="col-md-4">
+    <div class="tools" ng-controller="toolsController">
+        <ul>
+            <li ng-repeat="image in images">
+                <h3>{{image.Description}}</h3>
+                <img ng-src="{{image.Path}}" />
+            </li>
+        </ul>  
+    </div>
+</div>
+>>>>>>> Stashed changes
