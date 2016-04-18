@@ -9,15 +9,20 @@
     <value>10</value>
   </image>
   <image>
-    <filename>preparat.svg</filename>
+<<<<<<< Updated upstream
+    <filename>preparat.jpg</filename>
     <description>Preparat chemiczny na przędziorki</description>
+=======
+    <filename>preparat.svg</filename>
+    <description>Preparat chemiczny</description>
+>>>>>>> Stashed changes
     <level>1</level>
     <component>tools</component>
     <action>deworming</action>
     <value>1</value>
   </image>
   <image>
-    <filename>preparat.svg</filename>
+    <filename>preparat.jpg</filename>
     <description>Preparat chemiczny na mszyce</description>
     <level>1</level>
     <component>tools</component>
@@ -58,26 +63,20 @@
   </image>
   <image>
     <filename>slonce.svg</filename>
-    <description>Slonce</description>
+    <description>Słońce</description>
     <level>1</level>
     <component>environment</component>
-    <action></action>
-    <value>0</value>
   </image>
   <image>
     <filename>deszcz.svg</filename>
-    <description>deszcz</description>
+    <description>Deszcz</description>
     <level>1</level>
     <component>environment</component>
-    <action></action>
-    <value>0</value>
   </image>
   <image>
     <filename>chmura.svg</filename>
-    <description>chmura</description>
+    <description>Chmura</description>
     <level>1</level>
     <component>environment</component>
-    <action></action>
-    <value>0</value>
   </image>
 </images>
