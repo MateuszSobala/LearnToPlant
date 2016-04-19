@@ -224,6 +224,7 @@
     <Content Include="Images\nozyce.svg" />
     <Content Include="Images\owad.svg" />
     <Content Include="Images\pomidor.svg" />
+    <Content Include="Images\Pomidor_zdjecie.jpg" />
     <Content Include="Images\preparat.svg" />
     <Content Include="Images\slonce.svg" />
     <Content Include="Images\small_mario.png" />
@@ -235,6 +236,7 @@
     <Content Include="js\controllers\lessonsController.js" />
     <Content Include="js\controllers\toolsController.js" />
     <Content Include="js\controllers\workController.js" />
+    <Content Include="js\modal.js" />
     <Content Include="js\pop-up.js" />
     <Content Include="js\services\actionFactory.js" />
     <Content Include="js\services\imageService.js" />

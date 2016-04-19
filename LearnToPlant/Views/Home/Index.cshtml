@@ -3,6 +3,7 @@
 }
 @section Scripts {
 <script src="~/js/pop-up.js"></script>
+<script src="~/js/modal.js"></script>
 <script src="~/js/services/workFactory.js"></script>
 <script src="~/js/services/imageFactory.js"></script>
 <script src="~/js/services/actionFactory.js"></script>
@@ -12,25 +13,42 @@
 <script src="~/js/controllers/environmentController.js"></script>
 <script src="~/js/controllers/actionsController.js"></script>
 }
+
 <div>
-    <div id="welcome" class="popup">
-        <h3 id="tutorial"></h3>
-        <div class="popup lewo">
-            <img class="arrow" src="~/Images/common/down-arrow-icon.png" />
+    <!--    <div id="welcome" class="popup">
+            <h3 id="tutorial"></h3>
+            <div class="popup lewo">
+                <img class="arrow" src="~/Images/common/down-arrow-icon.png" />
+            </div>
+            <div class="popup prawo">
+                <img class="arrow" src="~/Images/common/down-arrow-icon.png" />
+            </div>
+            <div class="popup srodek">
+                <img class="arrow" src="~/Images/common/down-arrow-icon.png" />
+            </div>
         </div>
-        <div class="popup prawo">
-            <img class="arrow" src="~/Images/common/down-arrow-icon.png" />
-        </div>
-        <div class="popup srodek">
-            <img class="arrow" src="~/Images/common/down-arrow-icon.png" />
+    -->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header"></div>
+                <div class="modal-body row">
+                    <div class="col-md-6" id="modal-body-left"></div>
+                    <div class="col-md-6" id="modal-body-right"></div>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
         </div>
     </div>
+
 
     <div id="container" ng-controller="actionsController">
         <div class="col-md-4">
             <div id="lessons" ng-controller="lessonsController">
                 <ul>
-                    <li ng-repeat="image in images">
+                    <li ng-repeat="image in images" id="{{$index}}" onclick="show_modal(this)">
                         <p>{{image.Description}}</p>
                         <img ng-src="{{image.Path}}" />
                     </li>
@@ -40,7 +58,7 @@
         <div class="col-md-4">
             <div id="environment" ng-controller="environmentController">
                 <span ng-repeat="image in images">
-                    <img ng-src="{{image.Path}}" />
+                    <img ng-src="{{image.Path}}" style="visibility:hidden" />
                 </span>
             </div>
             <div id="workArea" ng-controller="workController">
@@ -49,8 +67,14 @@
                 </div>
                 
                 <div id="plant">
-                    <div ng-model="plant">
+                    <span ng-model="plant">
                         {{plant.Substrate.Humidity}}
+                    </span>
+                    <div ng-repeat="image in pomidor" class="col-md-12" style="visibility:hidden">
+                        <img ng-src="{{image.Path}}" />
+                    </div>
+                    <div ng-repeat="image in doniczka" class="col-md-12">
+                        <img ng-src="{{image.Path}}" />
                     </div>
                 </div>
             </div>

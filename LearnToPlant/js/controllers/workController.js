@@ -18,7 +18,13 @@
         });
 
         imageFactory.getImages(1, "work").success(function (data) {
-            $scope.images = data;
+            $scope.doniczka = data;
+        }).error(function (error) {
+            // log errors
+        });
+
+        imageFactory.getImages(2, "work").success(function (data) {
+            $scope.pomidor = data;
         }).error(function (error) {
             // log errors
         });

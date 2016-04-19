@@ -142,3 +142,20 @@ img.arrow {
     border: 2px solid black;
     padding: 10px; 
 }
+
+.work {
+    position:relative;
+
+}
+
+.center {
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+iframe {
+    display:block;
+    margin: 0 auto;
+    background-color: #777;
+}
