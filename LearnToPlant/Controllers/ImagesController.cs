@@ -20,6 +20,9 @@ namespace LearnToPlant.Controllers
         [HttpGet]
         public JsonResult<List<Image>> GetImages(int level, string component)
         {
+            if (component == "tools")
+                return Json(new ImageModel(level).ToList());
+
             return Json(new ImageModel(level, component).ToList());
         }
 

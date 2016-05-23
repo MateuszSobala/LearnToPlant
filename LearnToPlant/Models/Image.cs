@@ -34,11 +34,21 @@ namespace LearnToPlant.Models
             Value = value;
         }
 
+        public Image(string filename, string desc, int level, string component, List<Image> subImages)
+        {
+            Path = DirectoryOfImage + filename;
+            Description = desc;
+            Level = level;
+            Component = component;
+            SubImages = subImages;
+        }
+
         public string Path { get; set; }
         public string Description { get; set; }
         public int Level { get; set; }
         public string Component { get; set; }
         public string Action { get; set; }
         public int Value { get; set; }
+        public List<Image> SubImages { get; set; }
     }
 }

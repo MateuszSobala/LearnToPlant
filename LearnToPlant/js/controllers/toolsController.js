@@ -11,6 +11,7 @@
 
         imageFactory.getImages($rootScope.level, "tools").success(function (data) {
             $scope.images = data;
+            console.log(data);
         }).error(function (error) {
             // log errors
         });
