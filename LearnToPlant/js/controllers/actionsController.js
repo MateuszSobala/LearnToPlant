@@ -10,8 +10,6 @@
         $scope.images = [];
 
         $scope.handleAction = function (action, value) {
-            console.log(action + ": " + value);
-            console.log($rootScope.plant);
             actionFactory.handleAction($rootScope.plant, action, value).success(function (data) {
                 $rootScope.plant = data;
             }).error(function (error) {
