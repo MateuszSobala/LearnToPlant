@@ -7,27 +7,48 @@
     <component>tools</component>
     <action>watering</action>
     <value>10</value>
+    <id>1</id>
   </image>
   <image>
-<<<<<<< Updated upstream
-    <filename>preparat.jpg</filename>
-    <description>Preparat chemiczny na przędziorki</description>
-=======
     <filename>preparat.svg</filename>
-    <description>Preparat chemiczny</description>
->>>>>>> Stashed changes
+    <description>Preparat chemiczny na przędziorki</description>
     <level>1</level>
     <component>tools</component>
+<<<<<<< Updated upstream
+    <action></action>
+    <value>0</value>
+    <subImages>
+		  <subImage>
+			  <filename>owad.svg</filename>
+			  <description>owad</description>
+			  <level>1</level>
+			  <component>tools</component>
+			  <action>deworming</action>
+			  <value>1</value>
+		  </subImage>
+		  <subImage>
+			  <filename>lopatka.svg</filename>
+			  <description>łopatka</description>
+			  <level>1</level>
+			  <component>tools</component>
+			  <action>deworming</action>
+			  <value>2</value>
+		  </subImage>
+	  </subImages>
+=======
     <action>deworming</action>
     <value>1</value>
+    <id>2</id>
   </image>
   <image>
-    <filename>preparat.jpg</filename>
+    <filename>preparat.svg</filename>
     <description>Preparat chemiczny na mszyce</description>
     <level>1</level>
     <component>tools</component>
     <action>deworming</action>
     <value>2</value>
+    <id>3</id>
+>>>>>>> Stashed changes
   </image>
   <image>
     <filename>nasiona.svg</filename>
@@ -36,6 +57,7 @@
     <component>tools</component>
     <action>addseeds</action>
     <value>1</value>
+    <id>4</id>
   </image>
   <image>
     <filename>info.svg</filename>
@@ -44,6 +66,7 @@
     <component>lessons</component>
     <action></action>
     <value>0</value>
+    <id>5</id>
   </image>
   <image>
     <filename>info.svg</filename>
@@ -52,6 +75,7 @@
     <component>lessons</component>
     <action></action>
     <value>0</value>
+    <id>6</id>
   </image>
   <image>
     <filename>info.svg</filename>
@@ -60,23 +84,51 @@
     <component>lessons</component>
     <action></action>
     <value>0</value>
+    <id>7</id>
   </image>
   <image>
     <filename>slonce.svg</filename>
-    <description>Słońce</description>
+    <description>Slonce</description>
     <level>1</level>
     <component>environment</component>
+    <action></action>
+    <value>0</value>
+    <id>8</id>
   </image>
   <image>
     <filename>deszcz.svg</filename>
-    <description>Deszcz</description>
+    <description>deszcz</description>
     <level>1</level>
     <component>environment</component>
+    <action></action>
+    <value>0</value>
+    <id>9</id>
   </image>
   <image>
     <filename>chmura.svg</filename>
-    <description>Chmura</description>
+    <description>chmura</description>
     <level>1</level>
     <component>environment</component>
+    <action></action>
+    <value>0</value>
+    <id>10</id>
+  </image>
+  <image>
+    <filename>pomidor.svg</filename>
+    <description>pomidor</description>
+    <level>2</level>
+    <component>work</component>
+    <action></action>
+    <value>0</value>
+    <id>11</id>
+  </image>
+  <image>
+    <filename>doniczka.svg</filename>
+    <description>doniczka</description>
+    <level>1</level>
+    <component>work</component>
+    <action></action>
+    <value>0</value>
+    <id>12</id>
   </image>
 </images>

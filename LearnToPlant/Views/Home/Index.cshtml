@@ -16,19 +16,8 @@
 }
 
 <div>
-    <!--    <div id="welcome" class="popup">
-            <h3 id="tutorial"></h3>
-            <div class="popup lewo">
-                <img class="arrow" src="~/Images/common/down-arrow-icon.png" />
-            </div>
-            <div class="popup prawo">
-                <img class="arrow" src="~/Images/common/down-arrow-icon.png" />
-            </div>
-            <div class="popup srodek">
-                <img class="arrow" src="~/Images/common/down-arrow-icon.png" />
-            </div>
-        </div>
-    -->
+
+    
     <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog modal-lg">
@@ -83,9 +72,13 @@
         <div class="col-md-4">
             <div id="tools" ng-controller="toolsController">
                 <ul>
-                    <li ng-repeat="image in images">
+                    <li ng-repeat="image in images" id="{{image.Id}}">
                         <p>{{image.Description}}</p>
-                        <img ng-src="{{image.Path}}" ng-click="handleAction(image.Action, image.Value)" />
+                        <img ng-src="{{image.Path}}"  ng-mouseover="hoverIn()" ng-click="hoverOut()"/>
+                        <li class="tools-toggle" ng-repeat="subimage in image.SubImages" ng-show="hoverEdit" ng-click="handleAction(image.Action, image.Value)">
+                            <p>{{subimage.Description}}</p>
+                            <img ng-src="{{subimage.Path}}" ng-click="handleAction(subimage.Action, subimage.Value)" />
+                        </li>
                     </li>
                 </ul>
             </div>
