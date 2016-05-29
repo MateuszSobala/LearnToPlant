@@ -75,10 +75,12 @@
                     <li ng-repeat="image in images" id="{{image.Id}}">
                         <p>{{image.Description}}</p>
                         <img ng-src="{{image.Path}}"  ng-mouseover="hoverIn()" ng-click="hoverOut()"/>
-                        <li class="tools-toggle" ng-repeat="subimage in image.SubImages" ng-show="hoverEdit" ng-click="handleAction(image.Action, image.Value)">
-                            <p>{{subimage.Description}}</p>
-                            <img ng-src="{{subimage.Path}}" ng-click="handleAction(subimage.Action, subimage.Value)" />
-                        </li>
+                        <ul> 
+                            <li class="tools-toggle" ng-repeat="subimage in image.SubImages" ng-show="hoverEdit">
+                                <p>{{subimage.Description}}</p>
+                                <img ng-src="{{subimage.Path}}" ng-click="handleAction(subimage.Action, subimage.Value)" />
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>

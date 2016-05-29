@@ -1,13 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <images>
+
   <image>
-    <filename>konewka.svg</filename>
-    <description>Konewka</description>
+    <filename>tools.svg</filename>
+    <description>Narzędzia</description>
     <level>1</level>
     <component>tools</component>
-    <action>watering</action>
-    <value>10</value>
+    <action></action>
+    <value>0</value>
+    <subImages>
+      <subImage>
+        <filename>lopatka.svg</filename>
+        <description>Łopatka</description>
+        <level>1</level>
+        <component>tools</component>
+        <action>deworming</action>
+        <value>2</value>
+      </subImage>
+      <subImage>
+        <filename>konewka.svg</filename>
+        <description>Konewka</description>
+        <level>1</level>
+        <component>tools</component>
+        <action>watering</action>
+        <value>10</value>
+      </subImage>
+      <subImage>
+        <filename>nozyce.svg</filename>
+        <description>Nożyce</description>
+        <level>1</level>
+        <component>tools</component>
+        <action>deworming</action>
+        <value>1</value>
+      </subImage>
+    </subImages>
   </image>
+  
   <image>
     <filename>preparat.svg</filename>
     <description>Preparat chemiczny</description>
@@ -17,23 +45,24 @@
     <value>0</value>
     <subImages>
 		  <subImage>
-			  <filename>owad.svg</filename>
-			  <description>owad</description>
-			  <level>1</level>
-			  <component>tools</component>
-			  <action>deworming</action>
-			  <value>1</value>
+        <filename>preparat.svg</filename>
+        <description>Preparat na mszyce</description>
+        <level>1</level>
+        <component>tools</component>
+        <action>deworming</action>
+        <value>2</value>
 		  </subImage>
 		  <subImage>
-			  <filename>lopatka.svg</filename>
-			  <description>łopatka</description>
-			  <level>1</level>
-			  <component>tools</component>
-			  <action>deworming</action>
-			  <value>2</value>
+        <filename>preparat.svg</filename>
+        <description>Preparat na przędziorki</description>
+        <level>1</level>
+        <component>tools</component>
+        <action>deworming</action>
+        <value>1</value>
 		  </subImage>
 	  </subImages>
   </image>
+  
   <image>
     <filename>nasiona.svg</filename>
     <description>Nasiona</description>

@@ -160,6 +160,6 @@ iframe {
     background-color: #777;
 }
 
-.tools-toggle {
-  
+li.tools-toggle {
+  list-style-type: none;
 }

@@ -229,6 +229,7 @@
     <Content Include="Images\preparat.svg" />
     <Content Include="Images\slonce.svg" />
     <Content Include="Images\small_mario.png" />
+    <Content Include="Images\tools.svg" />
     <Content Include="Images\ziarna_kukurydzy.jpg" />
     <Content Include="Images\znak_zapytania.jpg" />
     <Content Include="js\app.js" />
