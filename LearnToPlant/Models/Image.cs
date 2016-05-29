@@ -8,6 +8,11 @@ namespace LearnToPlant.Models
     public class Image
     {
         public const string DirectoryOfImage = "/Images/";
+        private int p1;
+        private string p2;
+        private string p3;
+        private int p4;
+        private string p5;
 
         public Image(string filename, string desc, int level)
         {
@@ -18,6 +23,15 @@ namespace LearnToPlant.Models
 
         public Image(string filename, string desc, int level, string component)
         {
+            Path = DirectoryOfImage + filename;
+            Description = desc;
+            Level = level;
+            Component = component;
+        }
+
+        public Image(int id, string filename, string desc, int level, string component)
+        {
+            this.id = id;
             Path = DirectoryOfImage + filename;
             Description = desc;
             Level = level;
@@ -43,6 +57,17 @@ namespace LearnToPlant.Models
             SubImages = subImages;
         }
 
+        public Image(int id, string filename, string desc, int level, string component, List<Image> subImages)
+        {
+            this.id = id;
+            Path = DirectoryOfImage + filename;
+            Description = desc;
+            Level = level;
+            Component = component;
+            SubImages = subImages;
+        }
+
+        public int id { get; set; }
         public string Path { get; set; }
         public string Description { get; set; }
         public int Level { get; set; }

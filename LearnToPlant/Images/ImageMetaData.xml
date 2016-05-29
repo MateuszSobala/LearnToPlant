@@ -2,6 +2,7 @@
 <images>
 
   <image>
+    <id>0</id>
     <filename>tools.svg</filename>
     <description>Narzędzia</description>
     <level>1</level>
@@ -10,6 +11,7 @@
     <value>0</value>
     <subImages>
       <subImage>
+        <id>1</id>
         <filename>lopatka.svg</filename>
         <description>Łopatka</description>
         <level>1</level>
@@ -18,6 +20,7 @@
         <value>2</value>
       </subImage>
       <subImage>
+        <id>1</id>
         <filename>konewka.svg</filename>
         <description>Konewka</description>
         <level>1</level>
@@ -26,6 +29,7 @@
         <value>10</value>
       </subImage>
       <subImage>
+        <id>1</id>
         <filename>nozyce.svg</filename>
         <description>Nożyce</description>
         <level>1</level>
@@ -37,6 +41,7 @@
   </image>
   
   <image>
+    <id>0</id>
     <filename>preparat.svg</filename>
     <description>Preparat chemiczny</description>
     <level>1</level>
@@ -45,6 +50,7 @@
     <value>0</value>
     <subImages>
 		  <subImage>
+        <id>1</id>
         <filename>preparat.svg</filename>
         <description>Preparat na mszyce</description>
         <level>1</level>
@@ -53,6 +59,7 @@
         <value>2</value>
 		  </subImage>
 		  <subImage>
+        <id>1</id>
         <filename>preparat.svg</filename>
         <description>Preparat na przędziorki</description>
         <level>1</level>
@@ -64,6 +71,7 @@
   </image>
   
   <image>
+    <id>0</id>
     <filename>nasiona.svg</filename>
     <description>Nasiona</description>
     <level>1</level>
@@ -72,6 +80,7 @@
     <value>1</value>
   </image>
   <image>
+    <id>1</id>
     <filename>info.svg</filename>
     <description>Podpowiedź</description>
     <level>1</level>
@@ -80,6 +89,7 @@
     <value>0</value>
   </image>
   <image>
+    <id>1</id>
     <filename>info.svg</filename>
     <description>Podpowiedź</description>
     <level>1</level>
@@ -88,6 +98,7 @@
     <value>0</value>
   </image>
   <image>
+    <id>1</id>
     <filename>info.svg</filename>
     <description>Podpowiedź</description>
     <level>1</level>
@@ -96,6 +107,7 @@
     <value>0</value>
   </image>
   <image>
+    <id>1</id>
     <filename>slonce.svg</filename>
     <description>Slonce</description>
     <level>1</level>
@@ -104,6 +116,7 @@
     <value>0</value>
   </image>
   <image>
+    <id>1</id>
     <filename>deszcz.svg</filename>
     <description>deszcz</description>
     <level>1</level>
@@ -112,6 +125,7 @@
     <value>0</value>
   </image>
   <image>
+    <id>1</id>
     <filename>chmura.svg</filename>
     <description>chmura</description>
     <level>1</level>
@@ -120,6 +134,7 @@
     <value>0</value>
   </image>
   <image>
+    <id>1</id>
     <filename>pomidor.svg</filename>
     <description>pomidor</description>
     <level>2</level>
@@ -128,6 +143,7 @@
     <value>0</value>
   </image>
   <image>
+    <id>1</id>
     <filename>doniczka.svg</filename>
     <description>doniczka</description>
     <level>1</level>

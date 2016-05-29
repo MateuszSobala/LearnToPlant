@@ -35,7 +35,7 @@
 
 
     <div id="container" ng-controller="actionsController">
-        <div class="col-md-4">
+        <div class="col-md-2">
             <div id="lessons" ng-controller="lessonsController">
                 <ul>
                     <li ng-repeat="image in images" id="{{$index}}" onclick="show_modal(this)">
@@ -64,18 +64,18 @@
                         <img ng-src="{{image.Path}}" />
                     </div>
                     <div ng-repeat="image in doniczka" class="col-md-12">
-                        <img ng-src="{{image.Path}}" />
+                            <img ng-src="{{image.Path}}" />
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div id="tools" ng-controller="toolsController">
+        <div class="col-md-6">
+            <div id="tools" ng-controller="toolsController" style="position:absolute; right:10px;">
                 <ul>
                     <li ng-repeat="image in images" id="{{image.Id}}">
                         <p>{{image.Description}}</p>
-                        <img ng-src="{{image.Path}}"  ng-mouseover="hoverIn()" ng-click="hoverOut()"/>
-                        <ul> 
+                        <img ng-src="{{image.Path}}" ng-click="hoverInOut()" />
+                        <ul>
                             <li class="tools-toggle" ng-repeat="subimage in image.SubImages" ng-show="hoverEdit">
                                 <p>{{subimage.Description}}</p>
                                 <img ng-src="{{subimage.Path}}" ng-click="handleAction(subimage.Action, subimage.Value)" />
