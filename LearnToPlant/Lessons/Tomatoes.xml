@@ -7,7 +7,7 @@
       <item>
         <id>1</id>
         <action>Show</action>
-        <icon></icon>
+        <icon>http://www.lilchrzan.com/original_jpgs_w300/throwing_the_first_tomato.jpg</icon>
         <title>Wprowadzenie</title>
         <subitem>
           <type>Text</type>
@@ -44,7 +44,7 @@
       <item>
         <id>2</id>
         <action>Show</action>
-        <icon></icon>
+        <icon>http://www.guyaneseroots.com/wp-content/uploads/2015/07/Tomato.jpg</icon>
         <title>Informacje ogólne</title>
         <subitem>
           <type>Text</type>

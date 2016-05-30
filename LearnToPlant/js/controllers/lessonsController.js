@@ -7,16 +7,22 @@
         ['$scope', '$rootScope', 'imageFactory', 'lessonFactory', '$uibModal', lessonsController]);
 
     function lessonsController($scope, $rootScope, imageFactory, lessonFactory, $uibModal) {
-        $scope.images = [];
+        $scope.images = [{ text: 'Lekcja 1', path: 'Images/Icon1_1.png', items: []}];
         $scope.lessons = {};
         $scope.currentStep = 0;
+        $scope.currentLesson = 0;
         $rootScope.subject = "Tomatoes";
 
-        //imageFactory.getImages(1, "lessons").success(function (data) {
-        //    $scope.images = data;
-        //}).error(function (error) {
-        //    // log errors
-        //});
+        $scope.hoverInOut = function () {
+            if (this.hover) {
+                this.hoverEdit = true;
+                this.hover = false;
+            }
+            else {
+                this.hoverEdit = false;
+                this.hover = true;
+            }
+        }
 
         lessonFactory.loadLesson($rootScope.subject).success(function (data) {
             $scope.lessons = data.lessons;
@@ -58,8 +64,8 @@
             });
         };
 
-        $scope.addToImages = function() {
-            $scope.images.push({  id: $scope.currentStep, description: $rootScope.currentLesson.items.item[$scope.currentStep].title, path: $rootScope.currentLesson.items.item[$scope.currentStep].icon });
+        $scope.addToImages = function () {
+            $scope.images[0].items.push({  id: $scope.currentStep, description: $rootScope.currentLesson.items.item[$scope.currentStep].title, path: 'Images/icon1_' + $rootScope.currentLesson.items.item[$scope.currentStep].id + '.jpg' });
         }
 
         $scope.show = function () {
