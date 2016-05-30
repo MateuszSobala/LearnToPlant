@@ -237,8 +237,10 @@
     <Content Include="js\controllers\actionsController.js" />
     <Content Include="js\controllers\environmentController.js" />
     <Content Include="js\controllers\lessonsController.js" />
+    <Content Include="js\controllers\modalInstanceController.js" />
     <Content Include="js\controllers\toolsController.js" />
     <Content Include="js\controllers\workController.js" />
+    <Content Include="js\filter.js" />
     <Content Include="js\modal.js" />
     <Content Include="js\pop-up.js" />
     <Content Include="js\services\actionFactory.js" />
@@ -1065,7 +1067,6 @@
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Scripts\ui-bootstrap-tpls-1.3.3.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

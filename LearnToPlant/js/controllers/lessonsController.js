@@ -55,7 +55,7 @@
         $scope.showLesson = function (index) {
             return $uibModal.open({
                 templateUrl: 'myModalContent.html',
-                controller: 'ModalInstanceCtrl',
+                controller: 'modalInstanceController',
                 size: "lg",
                 resolve: {
                     item: $rootScope.currentLesson.items.item[index]
@@ -72,26 +72,4 @@
             document.getElementById("0").style.visibility = "hidden";
         };
     }
-
-    angular.module('app').controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, item) {
-
-        $scope.item = item;
-
-        $scope.ok = function () {
-            var checked = $("input[name=answear]:radio:checked");
-
-            if (checked.val() === "true") {
-                $uibModalInstance.close();
-            }
-            else {
-                checked.next().css({
-                    border: "3px red solid"
-                });
-            }
-        };
-
-        $scope.cancel = function () {
-            $uibModalInstance.dismiss('cancel');
-        };
-    });
 })();

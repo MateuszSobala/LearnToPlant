@@ -4,11 +4,13 @@
 @section Scripts {
 <script src="~/js/pop-up.js"></script>
 <script src="~/js/modal.js"></script>
+<script src="~/js/filter.js"></script>
 <script src="~/js/services/workFactory.js"></script>
 <script src="~/js/services/imageFactory.js"></script>
 <script src="~/js/services/actionFactory.js"></script>
 <script src="~/js/services/lessonFactory.js"></script>
 <script src="~/js/controllers/workController.js"></script>
+<script src="~/js/controllers/modalInstanceController.js"></script>
 <script src="~/js/controllers/lessonsController.js"></script>
 <script src="~/js/controllers/toolsController.js"></script>
 <script src="~/js/controllers/environmentController.js"></script>
@@ -16,8 +18,6 @@
 }
 
 <div>
-
-
     <!-- Modal -->
     <script type="text/ng-template" id="myModalContent.html">
             <div class="modal-header">
@@ -34,11 +34,10 @@
                             <input type="radio" name="answear" value="{{subitem.value}}" > <label>{{ subitem.key }}</label><br />
                         </div>
                         <div ng-switch-when="Image">
-                            {{subitem.value}}
-                            <img src="{{ subitem.value }}" class="img-thumbnail center-block">
+                            <img ng-src="{{ subitem.value }}" class="img-thumbnail center-block">
                         </div>
                         <div ng-switch-when="Video">
-                            @*<iframe width="100%" height="640" ng-src="{{subitem.value}}" />*@
+                            <iframe width="560" height="315" ng-src="{{subitem.value | trustThisUrl}}"></iframe>
                         </div>
                     </div>                  
                 </div>
