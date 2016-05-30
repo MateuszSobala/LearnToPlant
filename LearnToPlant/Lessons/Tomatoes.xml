@@ -153,6 +153,26 @@
           <value>Balkon/taras może znajdować się również po stronie zachodniej (roślina będzie oświetlona w pełni od popołudnia aż do zachodu słońca) lub wschodniej (roślina będzie oświetlona od poranku aż do południa). O ile nie ma możliwości ulokowania rośliny na samym południu o tyle wskazane jest ulokowanie jej po stronie południowo-wschodniej lub południowo-zachodniej, w gorszym wypadku na wschodzie lub zachodzie. Pomidory znajdujące się po stronie północnej są z góry na przegranej pozycji.</value>
         </subitem>
       </item>
+      <item>
+        <id>6</id>
+        <action>Show</action>
+        <title>Czy pomidor potrzebuje dużo słońca?</title>
+        <subitem>
+          <type>Test</type>
+          <key>Bardzo dużo</key>
+          <value>true</value>
+        </subitem>
+        <subitem>
+          <type>Test</type>
+          <key>Nie za wiele</key>
+          <value>false</value>
+        </subitem>
+        <subitem>
+          <type>Test</type>
+          <key>Pomidor jest z rodziny kaktusów</key>
+          <value>false</value>
+        </subitem>
+      </item>
     </items>
   </lesson>
 </lessons>

@@ -78,7 +78,16 @@
         $scope.item = item;
 
         $scope.ok = function () {
-            $uibModalInstance.close();
+            var checked = $("input[name=answear]:radio:checked");
+
+            if (checked.val() === "true") {
+                $uibModalInstance.close();
+            }
+            else {
+                checked.next().css({
+                    border: "3px red solid"
+                });
+            }
         };
 
         $scope.cancel = function () {
