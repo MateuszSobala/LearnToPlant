@@ -17,73 +17,75 @@
 
 <div>
 
-    
+
     <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog modal-lg">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header"></div>
-                <div class="modal-body row">
-                    <div class="col-md-6" id="modal-body-left"></div>
-                    <div class="col-md-6" id="modal-body-right"></div>
-                </div>
-                <div class="modal-footer"></div>
+        <script type="text/ng-template" id="myModalContent.html">
+            <div class="modal-header">
+                <h3 class="modal-title">I'm a modal!</h3>
             </div>
-        </div>
-    </div>
-
-
-    <div id="container" ng-controller="actionsController">
-        <div class="col-md-2">
-            <div id="lessons" ng-controller="lessonsController">
+            <div class="modal-body">
                 <ul>
-                    <li ng-repeat="image in images" id="{{$index}}" onclick="show_modal(this)">
-                        <p>{{image.Description}}</p>
-                        <img ng-src="{{image.Path}}" />
+                    <li ng-repeat="item in items">
+                        <a href="#" ng-click="$event.preventDefault(); selected.item = item">{{ item }}</a>
                     </li>
                 </ul>
+                Selected: <b>{{ selected.item }}</b>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div id="environment" ng-controller="environmentController">
-                <span ng-repeat="image in images">
-                    <img ng-src="{{image.Path}}" style="visibility:hidden" />
-                </span>
+            <div class="modal-footer">
+                <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
             </div>
-            <div id="workArea" ng-controller="workController">
-                <div id="notifications">
+        </script>
 
-                </div>
-                
-                <div id="plant">
-                    <span ng-model="plant">
-                        {{plant.Substrate.Humidity}}
-                    </span>
-                    <div ng-repeat="image in pomidor" class="col-md-12" style="visibility:hidden">
-                        <img ng-src="{{image.Path}}" />
-                    </div>
-                    <div ng-repeat="image in doniczka" class="col-md-12">
+        <div id="container" ng-controller="actionsController">
+            <div class="col-md-2">
+                <div id="lessons" ng-controller="lessonsController">
+                    <ul>
+                        <li ng-repeat="image in images" id="{{$index}}" onclick="show_modal(this)">
+                            <p>{{image.Description}}</p>
                             <img ng-src="{{image.Path}}" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="environment" ng-controller="environmentController">
+                    <span ng-repeat="image in images">
+                        <img ng-src="{{image.Path}}" style="visibility:hidden" />
+                    </span>
+                </div>
+                <div id="workArea" ng-controller="workController">
+                    <div id="notifications">
+
+                    </div>
+
+                    <div id="plant">
+                        <span ng-model="plant">
+                            {{plant.Substrate.Humidity}}
+                        </span>
+                        <div ng-repeat="image in pomidor" class="col-md-12" style="visibility:hidden">
+                            <img ng-src="{{image.Path}}" />
+                        </div>
+                        <div ng-repeat="image in doniczka" class="col-md-12">
+                            <img ng-src="{{image.Path}}" />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6">
-            <div id="tools" ng-controller="toolsController" style="position:absolute; right:10px;">
-                <ul>
-                    <li ng-repeat="image in images" id="{{image.Id}}">
-                        <p>{{image.Description}}</p>
-                        <img ng-src="{{image.Path}}" ng-click="hoverInOut()" />
-                        <ul>
-                            <li class="tools-toggle" ng-repeat="subimage in image.SubImages" ng-show="hoverEdit">
-                                <p>{{subimage.Description}}</p>
-                                <img ng-src="{{subimage.Path}}" ng-click="handleAction(subimage.Action, subimage.Value)" />
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+            <div class="col-md-6">
+                <div id="tools" ng-controller="toolsController" style="position:absolute; right:10px;">
+                    <ul>
+                        <li ng-repeat="image in images" id="{{image.Id}}">
+                            <p>{{image.Description}}</p>
+                            <img ng-src="{{image.Path}}" ng-click="hoverInOut()" />
+                            <ul>
+                                <li class="tools-toggle" ng-repeat="subimage in image.SubImages" ng-show="hoverEdit">
+                                    <p>{{subimage.Description}}</p>
+                                    <img ng-src="{{subimage.Path}}" ng-click="handleAction(subimage.Action, subimage.Value)" />
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
