@@ -7,26 +7,22 @@
       <item>
         <id>1</id>
         <action>Show</action>
-        <title>Podłoże</title>
+        <title>Wprowadzenie</title>
         <subitem>
           <type>Text</type>
-          <value>blablalbalav</value>
+          <value>Pomidor jest to owoc, którego dziki przodek pochodził prawdopodobnie z terenów południowego Peru. Pomidory są bogate w witaminy A, B1, B2, K, C, PP oraz fosfor, wapń, żelazo, sód, kwas jabłkowy i cytrynowy, likopen. Ze względu na małą zawartość cukru, pomidory powszechnie wykorzystywane są do sałatek i dań słonych niż do deserów. Warto w tym miejscu wspomnieć, że w 1893 roku Stany Zjednoczone Ameryki wprowadziły ustawę, która ze względu na zastosowania kulinarne uznała pomidora za warzywo.</value>
         </subitem>
         <subitem>
           <type>Text</type>
-          <value>blablalbaldsadsadsadsaadsdsav</value>
+          <value>Jak już wspomniano dziki przodek pomidora pochodził z terenów Peru lecz nie były zbyt popularne ze względu na gorzki smak i niewielkie owoce. Po udomowieniu rośliny przez Azteków wdarły się do świadomości i kuchni człowieka. Pierwotną nazwą pomidora było azteckie “xitomatl” co oznacza “duży, pulchny owoce”. Nazwa ta z czasem zamieniła się w “tomatl” żeby z upływem czasu dojrzeć do współczesnego “tomate”.</value>
         </subitem>
         <subitem>
-          <type>Image</type>
-          <value>linkDoZjecia1</value>
+          <type>Text</type>
+          <value>Początki pomidora w Europie były bardzo trudne - owoce ten podobnie jak ziemniaki uważany był za niezdrowy i trujący, a mądrzy tamtych czasów pisali w swoich dziełach o przeróżnych dolegliwościach jakie potrafią powodować (zaparcia, żółć, etc.). Nie mogło więc być inaczej - pomidor furory nie robił a bardziej niż w kuchni przydawał się w celach dekoracyjnych. Ciekawostką jest, że Kościół Katolicki w pewnym momencie zabronił spożywania pomidorów ze względu na szerzącą się plotkę jakoby pomidoro były wspaniałym afrodyzjakiem. Wyboista była droga pomidora z Ameryki do europejskich garnków.</value>
         </subitem>
         <subitem>
-          <type>Image</type>
-          <value>linkDoZjecia2</value>
-        </subitem>
-        <subitem>
-          <type>Video</type>
-          <value>linkDoFilmu</value>
+          <type>Text</type>
+          <value>Pierwszy przepis na sos z użyciem pomidora pochodzi już z 1692, jest on autorstwa Antonio Latiniego z Neapolu. Nie zmienia to jednak faktu, że powszechne uznanie i zastosowanie w kuchni europejskiej znalazły dopiero od XIX wieku czyli blisko 200 lat później.</value>
         </subitem>
       </item>
       <item>
@@ -47,26 +43,97 @@
       <item>
         <id>2</id>
         <action>Show</action>
-        <title>Sadzenie</title>
+        <title>Informacje ogólne</title>
         <subitem>
           <type>Text</type>
-          <value>blablalbalav</value>
+          <value>Ze względu na swoje egzotyczne pochodzenie pomidor jest rośliną wyjątkowo wymagającą pod względem pokarmowym jak i pielęgnacyjnym. </value>
         </subitem>
         <subitem>
           <type>Text</type>
-          <value>blablalbaldsadsadsadsaadsdsav</value>
+          <value>Aby pomidory rodziły duże, czerwone i słodkie owoce wymagane jest nasłonecznione, osłonięte od wiatru stanowisko uprawy. Pomidor jest rośliną zachłanną, im więcej słońca zostanie mu dostarczone tym dorodniejszych płodów można się spodziewać. Warunkiem koniecznym do uzyskania zdrowych, obfitych plonów jest zapewnienie roślinie odpowiedniego podłoża wraz ze składnikami mineralnymi - pomidory najlepiej rosną na podłożu piaszczysto-gliniastym o pH 5,5 - 6,5,  bogatym w fosfor, potas, bor czy żelazo.</value>
         </subitem>
         <subitem>
-          <type>Image</type>
-          <value>linkDoZjecia1</value>
+          <type>Text</type>
+          <value>Oczywiście, uzyskanie takich warunków w uprawach doniczkowych jest praktycznie nie możliwe dlatego ważne jest regularnie nawożenie rośliny.</value>
         </subitem>
         <subitem>
-          <type>Image</type>
-          <value>linkDoZjecia2</value>
+          <type>Text</type>
+          <value>Aby roślina wzrastała prawidłowo należy dostarczać jej odpowiednią ilość wody. Zachłanny pomidor wymaga regularnego podlewania, w przypadku upalnych dni nawet codziennego, najlepiej w godzinach porannych lub wczesnopopołudniowych.</value>
         </subitem>
         <subitem>
-          <type>Video</type>
-          <value>linkDoFilmu</value>
+          <type>Text</type>
+          <value>Na początku przygody z uprawą pomidorów należy dokonać wyboru odmiany. Hodowcy nie ustają w wysiłkach aby zaskoczyć czymś nowym, stąd na rynku dostępne są pomidory o różnych kolorach skórki (czerwone, malinowe, żółte, brązowe, zielone, białe), kształcie i rozmiarze owoców, ilości i wysokości pędów, etc. Do uprawy doniczkowej polecane są odmiany drobnoowocowe (tzw. koktajlowe) oraz karłowe, które charakteryzują się dużym płodem i stosunkowo niewielkim rozmiarem dorosłej rośliny.</value>
+        </subitem>
+      </item>
+      <item>
+        <id>3</id>
+        <action>Show</action>
+        <title>Środowisko</title>
+        <subitem>
+          <type>Text</type>
+          <value>Pierwszym krokiem towarzyszącym przygotowaniu doniczkowej uprawy pomidora jest wybór miejsca, w którym będzie znajdować się doniczka z rośliną. Idealny do tego celu będzie nasłoneczniony balkon posiadający daszek - uchroni to roślinę od nadmiernych powiewów wiatru oraz sprawi, że podczas sporych opadów woda nie będzie stale “stać” w doniczce.</value>
+        </subitem>
+        <subitem>
+          <type>Text</type>
+          <value>Kolejnym krokiem jest wybór oraz przygotowanie doniczki, w której znajdzie się nasza roślina. Nie bez znaczenia podczas wyboru doniczki jest materiał, z którego została wykonana - najlepsze do tego celu są donice drewniane lub ceramiczne (o wiele cięższe). Możliwe jest wykorzystanie doniczki plastikowej o ile nie jest ona w ciemnych kolorach (im ciemniejsza doniczka tym szybciej się nagrzewa jednocześnie przekazując ciepło korzeniom rośliny co może przyczynić do zatrzymania jej wzrostu). W przypadku doniczek ceramicznych czy plastikowych należy pamiętać również o otworach odpływowych w dnie - powinny być trzy. Ważna jest również głębokość doniczki - najlepsze są te o głębokości około 40 cm (zbyt głębokie lub zbyt płytkie doniczki mogą mieć zły wpływ na roślinę).</value>
+        </subitem>
+        <subitem>
+          <type>Text</type>
+          <value>Na samym dnie doniczki powinna znaleźć się warstwa keramzytu lub drobno potłuczonych glinianych donic/naczyń, który stworzy odpowiedni drenaż i zapobiegnie zaleganiu wody na dnie doniczki. Nie należy zapominać również o otworach odpływowych (trzech) a w przypadku doniczek drewnianych o nieprzylegających do siebie ściśle desek na dnie doniczki.</value>
+        </subitem>
+         <subitem>
+          <type>Text</type>
+          <value>Na warstwę drenażu należy wysypać odpowiednie podłoże do uprawy pomidorów (może to być podłoże reklamowane do uprawy pomidorów doniczkowych, mieszkanka kompostowo-torfowa, etc). Należy pamiętać, że pomidory najlepiej rosną na podłożu piaszczysto-gliniastym o pH 5,5 - 6,5. Nie należy zapełniać całej doniczki ziemią, kilka centymetrów należy zostawić na warstwę ściółki.</value>
+        </subitem>
+         <subitem>
+          <type>Text</type>
+          <value>Warstwa ściółki powinna znajdować się na samej górze donicy, bezpośrednio na podłożu do wzrostu rośliny. Wykorzystanie ściółki sprawi, że ziemia stanie się bardziej urodzajna (mogą rozwinąć się w niej pożyteczne mikroorganizmy), uchronimy roślinę przed nadmiernym przegrzewaniem się (ściółka będzie akumulować ciepło promieni słonecznych, które “odda” roślinie w nocy dzięki czemu ta będzie lepiej rosnąć, zapobiegniemy rozprzestrzenianiu się chorób (liście rośliny nie będą miały bezpośredniego kontaktu z ziemią i stojącą w niej od czasu do czasu wodą). Do ściółkowania rośliny należy wykorzystać słomę lub korę.</value>
+        </subitem>
+      </item>
+      <item>
+        <id>4</id>
+        <action>Show</action>
+        <title>Roślina</title>
+        <subitem>
+          <type>Text</type>
+          <value>Uprawa pomidorów w doniczkach jest bardzo podobna do uprawy gruntowej i rozpoczyna się ją od przygotowania rozsady. Przygotowanie odpowiedniej rozsady może być kłopotliwe dla osób początkujących więc materiał tej lekcji będzie zawierał również informacje o tym jak powinna wyglądać gotowa sadzonka sprzedawana w praktycznie każdym sklepie ogrodniczym.</value>
+        </subitem>
+            <subitem>
+          <type>Text</type>
+          <value>W przypadku sadzonek sklepowych należy szczególną uwagę zwrócić na korzenie (nie mogą być uszkodzone ani przesuszone) oraz na pędy i liście (nie mogą być zwiędnięte i pożółkłe). Warto również przyjrzeć się stożkom wzrostu rośliny oraz spodniej stronie liścia, która może zostać zaatakowana przez mszyce. Rozsada kupowana w sklepie powinna mieć od 15 do 30 cm wysokości (nie może być za wysoka), od 5 do 7 liści oraz zwartą bryłę korzeniową o średnicy 8-10 cm.</value>
+        </subitem>
+          <subitem>
+          <type>Text</type>
+          <value>Dla tradycyjnych upraw glebowych czas przygotowania rozsady trwa 5-8 tygodni. Biorąc pod uwagę fakt, że sadzonki pomidora powinno zostać wystawione na zewnątrz dopiero po 15 maja (żeby uniknąć przymrozków) rozsadę należy zaplanować na marzec.</value>
+        </subitem>
+          <subitem>
+          <type>Text</type>
+          <value>Rozsada powinna zostać posiana na podłożu zawierającego torf wysoki lub jego mieszanki np. z piaskiem w stosunku 4:1. Do przygotowania rozsady powinno się przygotować doniczki, niewielkie pojemniki lub wielodoniczkę, warstwa podłoża powinna mieć grubość 6-10 cm. Aby roślina dobrze wzrastała należy zapewnić jej odpowiednie warunku - do wschodów rośliny temperatura w pomieszczeniu powinna oscylować pomiędzy 25 – 28ºC, po wschodach w dzień powinno to być 18–20ºC a w nocy 14 – 16ºC.</value>
+        </subitem>
+        <subitem>
+          <type>Text</type>
+          <value>Dwa-trzy tygodnie po wschodzie (gdy ukażą się pierwsze liście) roślinę należy przepikować do docelowych doniczek. Przed pikowanie roślina powinna być obficie podlana, siewki o chorych lub słabo rozwiniętych korzeniach należy usunąć. W trakcie pikowania roślina powinna być obficie podlewana aby podłoże przylgnęło do korzeni. Na około 10 dni przed wystawieniem rośliny na zewnątrz należy ograniczyć podlewanie i często wietrzyć pomieszczenie aby zahartować roślinę do życia w docelowym środowisku. Rozsada jest gotowa gdy osiąga wysokość 15-30 cm i posiada 5-8 dobrze rozwiniętych liści właściwych. Rozsada pochodząca z wielodoniczek powinna być przesadzana w momencie gdy posiada 3-4 liście.</value>
+        </subitem>
+        <subitem>
+          <type>Text</type>
+          <value>Roślina powinna zostać umieszczona głęboko w donicy, tak aby bezlistna część łodygi była niemal całkowicie przykryta ziemia (najniżej położonej liście nie mogą bezpośrednio dotykać ziemi gdyż może to doprowadzić do wielu chorób).</value>
+        </subitem>
+      </item>
+      <item>
+        <id>5</id>
+        <action>Show</action>
+        <title>Warunki zewnętrzne</title>
+        <subitem>
+          <type>Text</type>
+          <value>Pomidor jest rośliną zachłanną na słońce dlatego bardzo duży wpływ na rozwój rośliny ma miejsce, w którym będzie znajdować się doniczka.</value>
+        </subitem>
+        <subitem>
+          <type>Text</type>
+          <value>Najlepszym miejscem do rozwoju pomidorów będzie balkon/taras znajdujący się od strony południowej gdyż w tym miejscu roślina przez cały dzień będzie wystawiona na działanie słońca - rano będzie to rozproszone światło od strony wschodniej, w południe pełne słońce południowe  a po południo słońce docierające ze strony zachodniej.</value>
+        </subitem>
+        <subitem>
+          <type>Text</type>
+          <value>Balkon/taras może znajdować się również po stronie zachodniej (roślina będzie oświetlona w pełni od popołudnia aż do zachodu słońca) lub wschodniej (roślina będzie oświetlona od poranku aż do południa). O ile nie ma możliwości ulokowania rośliny na samym południu o tyle wskazane jest ulokowanie jej po stronie południowo-wschodniej lub południowo-zachodniej, w gorszym wypadku na wschodzie lub zachodzie. Pomidory znajdujące się po stronie północnej są z góry na przegranej pozycji.</value>
         </subitem>
       </item>
     </items>

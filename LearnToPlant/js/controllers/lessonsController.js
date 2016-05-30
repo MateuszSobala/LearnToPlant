@@ -29,16 +29,14 @@
 
         $scope.handleAction = function () {
             if ($rootScope.currentLesson.items.item[$scope.currentStep].action === 'Show') {
-                console.log($uibModal);
+                console.log($rootScope.currentLesson.items.item[$scope.currentStep]);
 
                 var modalInstance = $uibModal.open({
                     templateUrl: 'myModalContent.html',
                     controller: 'ModalInstanceCtrl',
                     size: "lg",
                     resolve: {
-                        items: function () {
-                            return ["a", "b"];
-                        }
+                        item: $rootScope.currentLesson.items.item[$scope.currentStep]
                     },
                     backdrop: 'static'
                 });
@@ -46,8 +44,7 @@
                 modalInstance.result.then(function (selectedItem) {
                     $scope.addToImages();
                     $scope.currentStep++;
-                    console.log($scope.currentStep);
-                    console.log($rootScope.currentLesson.items.item.length);
+
                     if ($scope.currentStep < $rootScope.currentLesson.items.item.length) {
                         $scope.handleAction();
                     }
@@ -60,7 +57,7 @@
         }
 
         $scope.addToImages = function() {
-            $scope.images.push($scope.currentStep);
+            $scope.images.push({ description: $rootScope.currentLesson.items.item[$scope.currentStep].title });
         }
 
         $scope.show = function () {
@@ -68,15 +65,12 @@
         };
     }
 
-    angular.module('app').controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, items) {
+    angular.module('app').controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, item) {
 
-        $scope.items = items;
-        $scope.selected = {
-            item: $scope.items[0]
-        };
+        $scope.item = item;
 
         $scope.ok = function () {
-            $uibModalInstance.close($scope.selected.item);
+            $uibModalInstance.close();
         };
 
         $scope.cancel = function () {

@@ -19,17 +19,18 @@
 
 
     <!-- Modal -->
-        <script type="text/ng-template" id="myModalContent.html">
+    <script type="text/ng-template" id="myModalContent.html">
             <div class="modal-header">
-                <h3 class="modal-title">I'm a modal!</h3>
+                <h3 class="modal-title text-uppercase">{{ item.title }}</h3>
             </div>
             <div class="modal-body">
-                <ul>
-                    <li ng-repeat="item in items">
-                        <a href="#" ng-click="$event.preventDefault(); selected.item = item">{{ item }}</a>
-                    </li>
-                </ul>
-                Selected: <b>{{ selected.item }}</b>
+                <div ng-repeat="subitem in item.subitem">
+                    <div ng-switch on="subitem.type">
+                        <div ng-switch-when="Text">
+                            <p class="text-justify">{{ subitem.value }}</p>
+                        </div>
+                    </div>                  
+                </div>
             </div>
             <div class="modal-footer">
                 <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
@@ -41,8 +42,9 @@
                 <div id="lessons" ng-controller="lessonsController">
                     <ul>
                         <li ng-repeat="image in images" id="{{$index}}" onclick="show_modal(this)">
-                            <p>{{image.Description}}</p>
-                            <img ng-src="{{image.Path}}" />
+                            <p class="text-uppercase">{{image.description}}</p>
+                            <img ng-src="{{image.Path}}"/>
+                            <hr/>
                         </li>
                     </ul>
                 </div>
