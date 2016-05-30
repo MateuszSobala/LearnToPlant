@@ -51,7 +51,7 @@ namespace LearnToPlant.Models
             var images = from image in imageData.Descendants("image")
                          select new Image(int.Parse(image.Element("id").Value), image.Element("filename").Value, image.Element("description").Value, int.Parse(image.Element("level").Value), image.Element("component").Value,
                          (from subImage in image.Descendants("subImage")
-                          select new Image(int.Parse(subImage.Element("id").Value), subImage.Element("filename").Value, subImage.Element("description").Value, int.Parse(subImage.Element("level").Value), subImage.Element("component").Value)).ToList());
+                          select new Image(int.Parse(subImage.Element("id").Value), subImage.Element("filename").Value, subImage.Element("description").Value, int.Parse(subImage.Element("level").Value), subImage.Element("component").Value, subImage.Element("action").Value, int.Parse(subImage.Element("value").Value))).ToList());
             AddRange(images.Where(i => i.Level == level && i.Component.Equals("tools")).ToList());
         }
     }

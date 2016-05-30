@@ -45,10 +45,17 @@
             <div class="col-md-2">
                 <div id="lessons" ng-controller="lessonsController">
                     <ul>
-                        <li ng-repeat="image in images" id="{{$index}}" onclick="show_modal(this)">
-                            <p class="text-uppercase">{{image.description}}</p>
-                            <img ng-src="{{image.Path}}"/>
-                            <hr/>
+                        <li ng-repeat="image in images">
+                            <p class="text-uppercase">{{ image.text }}</p>
+                            <img ng-src="{{ image.path }}" ng-click="hoverInOut()"/>
+                            <ul>
+                                <li class="lessons-toggle" ng-repeat="item in image.items" id="{{$index}}" ng-show="hoverEdit">
+                                    <p class="text-uppercase">{{item.description}}</p>
+                                    <img ng-src="{{item.path}}" ng-click="showLesson(item.id)"/>
+                                    <hr/>
+                                </li>
+                            </ul>
+                            <hr />
                         </li>
                     </ul>
                 </div>

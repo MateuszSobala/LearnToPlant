@@ -7,16 +7,22 @@
         ['$scope', '$rootScope', 'imageFactory', 'lessonFactory', '$uibModal', lessonsController]);
 
     function lessonsController($scope, $rootScope, imageFactory, lessonFactory, $uibModal) {
-        $scope.images = [];
+        $scope.images = [{ text: 'Lekcja 1', path: 'Images/Icon1_1.png', items: []}];
         $scope.lessons = {};
         $scope.currentStep = 0;
+        $scope.currentLesson = 0;
         $rootScope.subject = "Tomatoes";
 
-        //imageFactory.getImages(1, "lessons").success(function (data) {
-        //    $scope.images = data;
-        //}).error(function (error) {
-        //    // log errors
-        //});
+        $scope.hoverInOut = function () {
+            if (this.hover) {
+                this.hoverEdit = true;
+                this.hover = false;
+            }
+            else {
+                this.hoverEdit = false;
+                this.hover = true;
+            }
+        }
 
         lessonFactory.loadLesson($rootScope.subject).success(function (data) {
             $scope.lessons = data.lessons;
@@ -29,19 +35,9 @@
 
         $scope.handleAction = function () {
             if ($rootScope.currentLesson.items.item[$scope.currentStep].action === 'Show') {
-                console.log($rootScope.currentLesson.items.item[$scope.currentStep]);
+                var modalInstance = $scope.showLesson($scope.currentStep);
 
-                var modalInstance = $uibModal.open({
-                    templateUrl: 'myModalContent.html',
-                    controller: 'ModalInstanceCtrl',
-                    size: "lg",
-                    resolve: {
-                        item: $rootScope.currentLesson.items.item[$scope.currentStep]
-                    },
-                    backdrop: 'static'
-                });
-
-                modalInstance.result.then(function (selectedItem) {
+                modalInstance.result.then(function () {
                     $scope.addToImages();
                     $scope.currentStep++;
 
@@ -56,8 +52,20 @@
             }           
         }
 
-        $scope.addToImages = function() {
-            $scope.images.push({ description: $rootScope.currentLesson.items.item[$scope.currentStep].title });
+        $scope.showLesson = function (index) {
+            return $uibModal.open({
+                templateUrl: 'myModalContent.html',
+                controller: 'ModalInstanceCtrl',
+                size: "lg",
+                resolve: {
+                    item: $rootScope.currentLesson.items.item[index]
+                },
+                backdrop: 'static'
+            });
+        };
+
+        $scope.addToImages = function () {
+            $scope.images[0].items.push({  id: $scope.currentStep, description: $rootScope.currentLesson.items.item[$scope.currentStep].title, path: 'Images/icon1_' + $rootScope.currentLesson.items.item[$scope.currentStep].id + '.jpg' });
         }
 
         $scope.show = function () {

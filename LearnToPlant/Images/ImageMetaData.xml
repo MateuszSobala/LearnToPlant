@@ -67,18 +67,18 @@
         <action>deworming</action>
         <value>1</value>
 		  </subImage>
+      <subImage>
+        <id>1</id>
+        <filename>nasiona.svg</filename>
+        <description>Nasiona</description>
+        <level>1</level>
+        <component>tools</component>
+        <action>addseeds</action>
+        <value>1</value>
+      </subImage>
 	  </subImages>
   </image>
   
-  <image>
-    <id>0</id>
-    <filename>nasiona.svg</filename>
-    <description>Nasiona</description>
-    <level>1</level>
-    <component>tools</component>
-    <action>addseeds</action>
-    <value>1</value>
-  </image>
   <image>
     <id>1</id>
     <filename>info.svg</filename>
