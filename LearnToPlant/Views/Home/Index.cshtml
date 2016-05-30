@@ -41,9 +41,9 @@
             <div class="col-md-2">
                 <div id="lessons" ng-controller="lessonsController">
                     <ul>
-                        <li ng-repeat="image in images" id="{{$index}}" onclick="show_modal(this)">
+                        <li ng-repeat="image in images" id="{{$index}}">
                             <p class="text-uppercase">{{image.description}}</p>
-                            <img ng-src="{{image.Path}}"/>
+                            <img ng-src="{{image.path}}" ng-click="showLesson(image.id)"/>
                             <hr/>
                         </li>
                     </ul>

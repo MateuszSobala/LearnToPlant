@@ -29,19 +29,9 @@
 
         $scope.handleAction = function () {
             if ($rootScope.currentLesson.items.item[$scope.currentStep].action === 'Show') {
-                console.log($rootScope.currentLesson.items.item[$scope.currentStep]);
+                var modalInstance = $scope.showLesson($scope.currentStep);
 
-                var modalInstance = $uibModal.open({
-                    templateUrl: 'myModalContent.html',
-                    controller: 'ModalInstanceCtrl',
-                    size: "lg",
-                    resolve: {
-                        item: $rootScope.currentLesson.items.item[$scope.currentStep]
-                    },
-                    backdrop: 'static'
-                });
-
-                modalInstance.result.then(function (selectedItem) {
+                modalInstance.result.then(function () {
                     $scope.addToImages();
                     $scope.currentStep++;
 
@@ -56,8 +46,20 @@
             }           
         }
 
+        $scope.showLesson = function (index) {
+            return $uibModal.open({
+                templateUrl: 'myModalContent.html',
+                controller: 'ModalInstanceCtrl',
+                size: "lg",
+                resolve: {
+                    item: $rootScope.currentLesson.items.item[index]
+                },
+                backdrop: 'static'
+            });
+        };
+
         $scope.addToImages = function() {
-            $scope.images.push({ description: $rootScope.currentLesson.items.item[$scope.currentStep].title });
+            $scope.images.push({  id: $scope.currentStep, description: $rootScope.currentLesson.items.item[$scope.currentStep].title, path: $rootScope.currentLesson.items.item[$scope.currentStep].icon });
         }
 
         $scope.show = function () {
