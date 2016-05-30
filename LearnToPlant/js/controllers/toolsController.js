@@ -38,7 +38,7 @@
                 var toDeleteImage = [];
                 for (var item in $scope.images) {
                     for (var subimage in $scope.images[item].SubImages) {
-                        if (isInTools($scope.images[item].SubImages[subimage].id)) {
+                        if (isInTools($scope.images[item].SubImages[subimage].Action)) {
                             toDelete.unshift(item);
                             toDeleteImage.unshift(subimage);
                         }
@@ -57,9 +57,9 @@
             // log errors
         });
 
-        function isInTools(id) {
+        function isInTools(action) {
             for (var item in $scope.toolsToLesson) {
-                if ($scope.toolsToLesson[item].value == id)
+                if ($scope.toolsToLesson[item].component["@action"] == action)
                     return false;
             }
             return true;
