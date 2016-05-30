@@ -23,11 +23,15 @@
             <div class="modal-header">
                 <h3 class="modal-title text-uppercase">{{ item.title }}</h3>
             </div>
-            <div class="modal-body">
+            <div name="modalBody" class="modal-body">
+                <input type="radio" name="answear" value="true" checked="checked" style="display:none;" />
                 <div ng-repeat="subitem in item.subitem">
                     <div ng-switch on="subitem.type">
                         <div ng-switch-when="Text">
                             <p class="text-justify">{{ subitem.value }}</p>
+                        </div>
+                        <div ng-switch-when="Test">
+                            <input type="radio" name="answear" value="{{subitem.value}}" > <label>{{ subitem.key }}</label><br />
                         </div>
                     </div>                  
                 </div>
