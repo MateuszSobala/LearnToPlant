@@ -54,7 +54,7 @@
                 console.log('Jazda!');
                 if (value == $scope.val) {
                     $scope.currentStep++;
-                    $scope.$emit('handleLesson', { arg: 1 });
+                    $scope.$emit('handleLesson', { arg: value });
                     $scope.val++;
                 }
                 //$scope.handleAction();

@@ -160,7 +160,7 @@
   <image>
     <id>0</id>
     <filename>ziemia.svg</filename>
-    <description>Drenaż</description>
+    <description>Ziemia</description>
     <level>1</level>
     <component>tools</component>
     <action></action>
@@ -187,7 +187,7 @@
       <subImage>
         <id>3</id>
         <filename>ziemia-uniwersalna.svg</filename>
-        <description>Ziemia uniwersalna</description>
+        <description>Uniwersalna</description>
         <level>1</level>
         <component>tools</component>
         <action>ground</action>

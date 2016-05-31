@@ -64,5 +64,9 @@
             }
             return true;
         }
+
+        $scope.$on('handleEraseItem', function (event, args) {
+            $scope.images.splice(0, 1);
+        });
     }
 })();

@@ -9,6 +9,10 @@
     function actionsController($scope, $rootScope, actionFactory) {
         $scope.images = [];
 
+        $scope.$on('handleLesson', function (event, args) {
+            $scope.$broadcast('handleEraseItem', { value: args.value });
+        });
+
         $scope.handleAction = function (action, value) {
             // actionFactory.handleAction($rootScope.plant, action, value).success(function (data) {
             //     $rootScope.plant = data;
@@ -16,10 +20,6 @@
             // log errors
             $scope.$broadcast('handleActionPlant', { acton: action, value: value });
         }
-
-        $scope.$on('handleLesson', function (event, args) {
-            
-        });
         
     }
 })();
