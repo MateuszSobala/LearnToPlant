@@ -72,7 +72,8 @@
                 resolve: {
                     item: $rootScope.currentLesson.items.item[index]
                 },
-                backdrop: 'static'
+                backdrop: 'static',
+                keyboard: false
             });
         };
 

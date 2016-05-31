@@ -102,8 +102,18 @@ ul img {
     transition-timing-function: ease;
 }
 
+ul img.action0:active {
+    background: #be3730;
+    pointer-events: none;
+    cursor: default;
+}
+
+ul img.action1:active {
+    background: #008000;
+}
+
 ul img:active {
-    background: #e66862;
+    background: #0000cd;
 }
 
 #tools ul img:hover{

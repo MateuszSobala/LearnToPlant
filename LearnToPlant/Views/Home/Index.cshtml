@@ -99,7 +99,14 @@
                             <ul>
                                 <li class="tools-toggle" ng-repeat="subimage in image.SubImages" ng-show="hoverEdit">
                                     <p>{{subimage.Description}}</p>
-                                    <img ng-src="{{subimage.Path}}" ng-click="handleAction(subimage.Action, subimage.Value)" />
+                                    <div ng-switch on="subimage.Value">
+                                        <div ng-switch-when="0">
+                                            <img class="action0" ng-src="{{subimage.Path}}" ng-click="handleAction(subimage.Action, subimage.Value)" />
+                                        </div>
+                                        <div ng-switch-default>
+                                            <img class="action1" ng-src="{{subimage.Path}}" ng-click="handleAction(subimage.Action, subimage.Value)" />
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                         </li>
