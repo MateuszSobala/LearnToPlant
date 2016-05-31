@@ -10,7 +10,7 @@
         $scope.images = [];
         $scope.hover = true;
         $scope.toolsToLesson = [];
-        
+
         $scope.hoverInOut = function () {
             if (this.hover) {
                 this.hoverEdit = true;

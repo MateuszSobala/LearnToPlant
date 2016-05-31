@@ -16,6 +16,9 @@ namespace LearnToPlant.Models
         addsoil,
         addpot,
         addsun,
-        addfertilizer
+        addfertilizer,
+        potmaterial,
+        potsize,
+        potcolor
     }
 }

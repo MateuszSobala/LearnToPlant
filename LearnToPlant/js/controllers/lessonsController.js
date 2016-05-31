@@ -12,6 +12,7 @@
         $scope.currentStep = 0;
         $scope.currentLesson = 0;
         $rootScope.subject = "Tomatoes";
+        $scope.val = 1;
 
         $scope.hoverInOut = function () {
             if (this.hover) {
@@ -33,7 +34,11 @@
             // log errors
         });
 
-        $scope.handleAction = function () {
+        $scope.$on('handleActionPlant', function (event, args) {
+            $scope.handleAction(args.value);
+        });
+
+        $scope.handleAction = function (value) {
             if ($rootScope.currentLesson.items.item[$scope.currentStep].action === 'Show') {
                 var modalInstance = $scope.showLesson($scope.currentStep);
 
@@ -46,9 +51,16 @@
                     }
                 });
             } else {
-                console.log('dla rafałka');
-                $scope.currentStep++;
-                $scope.handleAction();
+                console.log('Jazda!');
+                if (value == $scope.val) {
+                    $scope.currentStep++;
+                    $scope.$emit('handleLesson', { arg: 1 });
+                    $scope.val++;
+                }
+                else {
+                    $scope.currentStep++;
+                }
+                //$scope.handleAction();
             }           
         }
 
