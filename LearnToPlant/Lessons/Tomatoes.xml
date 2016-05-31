@@ -35,21 +35,6 @@
         </subitem>
       </item>
       <item>
-        <action>Add</action>
-        <component>lessons</component>
-        <idToAdd>1</idToAdd>
-      </item>
-      <item>
-        <action>Action</action>
-        <component action="addseeds">tools</component>
-        <value>1</value>
-      </item>
-      <item>
-        <action>Action</action>
-        <component action="watering">tools</component>
-        <value>3</value>
-      </item>
-      <item>
         <id>2</id>
         <action>Show</action>
         <icon>http://www.guyaneseroots.com/wp-content/uploads/2015/07/Tomato.jpg</icon>
@@ -128,6 +113,21 @@
           <type>Image</type>
           <value>../Images/lesson1_9.jpg</value>
         </subitem>
+      </item>
+      <item>
+        <action>Action</action>
+        <component action="potmaterial">tools</component>
+        <value>1</value>
+      </item>
+      <item>
+        <action>Action</action>
+        <component action="potsize">tools</component>
+        <value>2</value>
+      </item>
+      <item>
+        <action>Action</action>
+        <component action="potcolor">tools</component>
+        <value>3</value>
       </item>
       <item>
         <id>4</id>

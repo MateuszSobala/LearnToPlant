@@ -10,12 +10,16 @@
         $scope.images = [];
 
         $scope.handleAction = function (action, value) {
-            actionFactory.handleAction($rootScope.plant, action, value).success(function (data) {
-                $rootScope.plant = data;
-            }).error(function (error) {
-                // log errors
-            });
+            // actionFactory.handleAction($rootScope.plant, action, value).success(function (data) {
+            //     $rootScope.plant = data;
+            // }).error(function (error) {
+            // log errors
+            $scope.$broadcast('handleActionPlant', { acton: action, value: value });
         }
+
+        $scope.$on('handleLesson', function (event, args) {
+            
+        });
         
     }
 })();

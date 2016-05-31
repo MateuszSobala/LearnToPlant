@@ -3,8 +3,8 @@
 
   <image>
     <id>0</id>
-    <filename>tools.svg</filename>
-    <description>Narzędzia</description>
+    <filename>pot-materials.svg</filename>
+    <description>Rodziaj materiału</description>
     <level>1</level>
     <component>tools</component>
     <action></action>
@@ -12,71 +12,110 @@
     <subImages>
       <subImage>
         <id>1</id>
-        <filename>lopatka.svg</filename>
-        <description>Łopatka</description>
+        <filename>pot-20-wood.svg</filename>
+        <description>Drewno</description>
         <level>1</level>
         <component>tools</component>
-        <action>deworming</action>
-        <value>2</value>
-      </subImage>
-      <subImage>
-        <id>1</id>
-        <filename>konewka.svg</filename>
-        <description>Konewka</description>
-        <level>1</level>
-        <component>tools</component>
-        <action>watering</action>
-        <value>10</value>
-      </subImage>
-      <subImage>
-        <id>1</id>
-        <filename>nozyce.svg</filename>
-        <description>Nożyce</description>
-        <level>1</level>
-        <component>tools</component>
-        <action>deworming</action>
+        <action>potmaterial</action>
         <value>1</value>
+      </subImage>
+      <subImage>
+        <id>2</id>
+        <filename>pot-20-metal.svg</filename>
+        <description>Metal</description>
+        <level>1</level>
+        <component>tools</component>
+        <action>potmaterial</action>
+        <value>0</value>
+      </subImage>
+      <subImage>
+        <id>3</id>
+        <filename>pot-20-plastic.svg</filename>
+        <description>Plastik</description>
+        <level>1</level>
+        <component>tools</component>
+        <action>potmaterial</action>
+        <value>0</value>
       </subImage>
     </subImages>
   </image>
-  
+
   <image>
     <id>0</id>
-    <filename>preparat.svg</filename>
-    <description>Preparat chemiczny</description>
+    <filename>pot-sizes.svg</filename>
+    <description>Wysokość</description>
     <level>1</level>
     <component>tools</component>
     <action></action>
     <value>0</value>
     <subImages>
-		  <subImage>
-        <id>1</id>
-        <filename>preparat.svg</filename>
-        <description>Preparat na mszyce</description>
-        <level>1</level>
-        <component>tools</component>
-        <action>deworming</action>
-        <value>2</value>
-		  </subImage>
-		  <subImage>
-        <id>1</id>
-        <filename>preparat.svg</filename>
-        <description>Preparat na przędziorki</description>
-        <level>1</level>
-        <component>tools</component>
-        <action>deworming</action>
-        <value>1</value>
-		  </subImage>
       <subImage>
         <id>1</id>
-        <filename>nasiona.svg</filename>
-        <description>Nasiona</description>
+        <filename>pot-10.svg</filename>
+        <description>10 cm</description>
         <level>1</level>
         <component>tools</component>
-        <action>addseeds</action>
-        <value>1</value>
+        <action>potsize</action>
+        <value>0</value>
       </subImage>
-	  </subImages>
+      <subImage>
+        <id>2</id>
+        <filename>pot-20.svg</filename>
+        <description>20 cm</description>
+        <level>1</level>
+        <component>tools</component>
+        <action>potsize</action>
+        <value>0</value>
+      </subImage>
+      <subImage>
+        <id>3</id>
+        <filename>pot-40.svg</filename>
+        <description>40 cm</description>
+        <level>1</level>
+        <component>tools</component>
+        <action>potsize</action>
+        <value>2</value>
+      </subImage>
+    </subImages>
+  </image>
+
+  <image>
+    <id>0</id>
+    <filename>pot-colors.svg</filename>
+    <description>Kolor</description>
+    <level>1</level>
+    <component>tools</component>
+    <action></action>
+    <value>0</value>
+    <subImages>
+      <subImage>
+        <id>1</id>
+        <filename>pot-20-green.svg</filename>
+        <description>Zielony</description>
+        <level>1</level>
+        <component>tools</component>
+        <action>potcolor</action>
+        <value>0</value>
+      </subImage>
+      <subImage>
+        <id>2</id>
+        <filename>pot-20-plastic.svg</filename>
+        <description>Pomarańczowy</description>
+        <level>1</level>
+        <component>tools</component>
+        <action>potcolor</action>
+        <value>3</value>
+      </subImage>
+      <subImage>
+        <id>3</id>
+        <filename>pot-20-black.svg</filename>
+        <description>Czarny</description>
+        <level>1</level>
+        <component>tools</component>
+        <action>potcolor</action>
+        <value>0</value>
+      </subImage>
+    </subImages>
   </image>
   
   <image>

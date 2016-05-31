@@ -162,5 +162,14 @@ iframe {
 
 li.tools-toggle {
     float:left;
+<<<<<<< Updated upstream
+}
+
+li.lessons-toggle {
+    float:right;
+    margin-left: 30px;
+    width: 70%;
+=======
     text-align: center;
+>>>>>>> Stashed changes
 }
