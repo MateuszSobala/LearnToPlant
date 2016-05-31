@@ -66,7 +66,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-8">
                 <div id="environment" ng-controller="environmentController">
                     <span ng-repeat="image in images">
                         <img ng-src="{{image.Path}}" style="visibility:hidden" />
@@ -77,10 +77,7 @@
 
                     </div>
 
-                    <div id="plant">
-                        <span ng-model="plant">
-                            {{plant.Substrate.Humidity}}
-                        </span>
+                    <div id="plant" class="center-block" style="height: 350px; display: flex; align-items: flex-end">
                         <div ng-repeat="image in pomidor" class="col-md-12" style="visibility:hidden">
                             <img ng-src="{{image.Path}}" />
                         </div>
@@ -90,7 +87,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-2">
                 <div id="tools" ng-controller="toolsController" style="position:absolute; right:10px;">
                     <ul>
                         <li ng-repeat="image in images" id="{{image.Id}}">

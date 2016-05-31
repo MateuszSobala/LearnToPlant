@@ -172,6 +172,7 @@ iframe {
 li.tools-toggle {
     float:left;
     text-align: center;
+    margin-right: 30px;
 }
 
 li.lessons-toggle {
