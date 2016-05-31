@@ -7,7 +7,7 @@
         ['$scope', '$rootScope', 'imageFactory', 'lessonFactory', '$uibModal', lessonsController]);
 
     function lessonsController($scope, $rootScope, imageFactory, lessonFactory, $uibModal) {
-        $scope.images = [{ text: 'Lekcja 1', path: 'Images/Icon1_1.png', items: []}];
+        $scope.images = [{ text: 'Lekcja 1', path: '../Images/Icon1_1.png', items: []}];
         $scope.lessons = {};
         $scope.currentStep = 0;
         $scope.currentLesson = 0;
@@ -65,7 +65,7 @@
         };
 
         $scope.addToImages = function () {
-            $scope.images[0].items.push({  id: $scope.currentStep, description: $rootScope.currentLesson.items.item[$scope.currentStep].title, path: 'Images/icon1_' + $rootScope.currentLesson.items.item[$scope.currentStep].id + '.jpg' });
+            $scope.images[0].items.push({  id: $scope.currentStep, description: $rootScope.currentLesson.items.item[$scope.currentStep].title, path: '../Images/icon1_' + $rootScope.currentLesson.items.item[$scope.currentStep].id + '.jpg' });
         }
 
         $scope.show = function () {

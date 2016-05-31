@@ -15,7 +15,7 @@
         </subitem>
         <subitem>
           <type>Image</type>
-          <value>Images/lesson1_2.jpg</value>
+          <value>../Images/lesson1_2.jpg</value>
         </subitem>
         <subitem>
           <type>Text</type>
@@ -60,7 +60,7 @@
         </subitem>
         <subitem>
           <type>Image</type>
-          <value>Images/lesson1_3.jpg</value>
+          <value>../Images/lesson1_3.jpg</value>
         </subitem>
         <subitem>
           <type>Text</type>
@@ -76,7 +76,7 @@
         </subitem>
         <subitem>
           <type>Image</type>
-          <value>Images/lesson1_4.jpg</value>
+          <value>../Images/lesson1_4.jpg</value>
         </subitem>
         <subitem>
           <type>Text</type>
@@ -84,7 +84,7 @@
         </subitem>
         <subitem>
           <type>Image</type>
-          <value>Images/lesson1_5.jpg</value>
+          <value>../Images/lesson1_5.jpg</value>
         </subitem>
       </item>
       <item>
@@ -98,7 +98,7 @@
         </subitem>
         <subitem>
           <type>Image</type>
-          <value>Images/lesson1_6.jpg</value>
+          <value>../Images/lesson1_6.jpg</value>
         </subitem>
         <subitem>
           <type>Text</type>
@@ -106,7 +106,7 @@
         </subitem>
         <subitem>
           <type>Image</type>
-          <value>Images/lesson1_7.jpg</value>
+          <value>../Images/lesson1_7.jpg</value>
         </subitem>
         <subitem>
           <type>Text</type>
@@ -114,7 +114,7 @@
         </subitem>
         <subitem>
           <type>Image</type>
-          <value>Images/lesson1_8.jpg</value>
+          <value>../Images/lesson1_8.jpg</value>
         </subitem>
         <subitem>
           <type>Text</type>
@@ -126,7 +126,7 @@
         </subitem>
         <subitem>
           <type>Image</type>
-          <value>Images/lesson1_9.jpg</value>
+          <value>../Images/lesson1_9.jpg</value>
         </subitem>
       </item>
       <item>
@@ -144,7 +144,7 @@
         </subitem>
         <subitem>
           <type>Image</type>
-          <value>Images/lesson1_12.jpg</value>
+          <value>../Images/lesson1_12.jpg</value>
         </subitem>
         <subitem>
           <type>Text</type>
@@ -156,7 +156,7 @@
         </subitem>
         <subitem>
           <type>Image</type>
-          <value>Images/lesson1_10.jpg</value>
+          <value>../Images/lesson1_10.jpg</value>
         </subitem>
         <subitem>
           <type>Text</type>
@@ -168,7 +168,7 @@
         </subitem>
         <subitem>
           <type>Image</type>
-          <value>Images/lesson1_11.jpg</value>
+          <value>../Images/lesson1_11.jpg</value>
         </subitem>
       </item>
       <item>
@@ -186,7 +186,7 @@
         </subitem>
         <subitem>
           <type>Image</type>
-          <value>Images/lesson1_1.jpg</value>
+          <value>../Images/lesson1_1.jpg</value>
         </subitem>
         <subitem>
           <type>Text</type>
