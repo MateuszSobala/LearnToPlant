@@ -51,13 +51,18 @@
                     }
                 });
             } else {
-                console.log('Jazda!');
-                if (value == $scope.val) {
+                console.log($scope.val);
+                console.log(value);
+
+                if (value === $scope.val) {
                     $scope.currentStep++;
-                    $scope.$emit('handleLesson', { arg: value });
                     $scope.val++;
+                    $scope.$emit('handleLesson', { arg: value });
+
+                    if ($scope.currentStep < $rootScope.currentLesson.items.item.length && $rootScope.currentLesson.items.item[$scope.currentStep].action === 'Show') {
+                        $scope.handleAction();
+                    }
                 }
-                //$scope.handleAction();
             }           
         }
 

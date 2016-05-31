@@ -95,7 +95,7 @@
                             <img ng-src="{{image.Path}}" ng-click="hoverInOut()" />
                             <ul>
                                 <li class="tools-toggle" ng-repeat="subimage in image.SubImages" ng-show="hoverEdit">
-                                    <p>{{subimage.Description}}</p>
+                                    <p>{{subimage.Description}} {{subimage.Value}}</p>
                                     <div ng-switch on="subimage.Value">
                                         <div ng-switch-when="0">
                                             <img class="action0" ng-src="{{subimage.Path}}" ng-click="handleAction(subimage.Action, subimage.Value)" />
