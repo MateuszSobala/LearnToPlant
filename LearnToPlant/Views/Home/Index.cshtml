@@ -48,7 +48,7 @@
         </script>
 
         <div id="container" ng-controller="actionsController">
-            <div class="col-md-2">
+            <div class="col-md-4">
                 <div id="lessons" ng-controller="lessonsController">
                     <ul>
                         <li ng-repeat="image in images">
@@ -66,7 +66,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-4">
                 <div id="environment" ng-controller="environmentController">
                     <span ng-repeat="image in images">
                         <img ng-src="{{image.Path}}" style="visibility:hidden" />
@@ -87,7 +87,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-4">
                 <div id="tools" ng-controller="toolsController" style="position:absolute; right:10px;">
                     <ul>
                         <li ng-repeat="image in images" id="{{image.Id}}">

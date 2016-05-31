@@ -89,8 +89,8 @@ textarea {
 }
 
 ul img {
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     stroke: black;
     stroke-width: 2px;
 
@@ -117,13 +117,13 @@ ul img:active {
 }
 
 #tools ul img:hover{
-    width: 120px;
-    height:120px;
+    width: 100px;
+    height:100px;
 }
 
 #lessons ul img:hover{
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
 }
 
 /* HOVER STYLES */
@@ -172,7 +172,6 @@ iframe {
 li.tools-toggle {
     float:left;
     text-align: center;
-    margin-right: 30px;
 }
 
 li.lessons-toggle {
