@@ -182,6 +182,21 @@
         <value>5</value>
       </item>
       <item>
+        <action>Action</action>
+        <component action="flowerHeight">tools</component>
+        <value>6</value>
+      </item>
+      <item>
+        <action>Action</action>
+        <component action="flowerLeafs">tools</component>
+        <value>7</value>
+      </item>
+      <item>
+        <action>Action</action>
+        <component action="flowerRot">tools</component>
+        <value>8</value>
+      </item>
+      <item>
         <id>5</id>
         <action>Show</action>
         <icon></icon>

@@ -19,6 +19,11 @@ namespace LearnToPlant.Models
         addfertilizer,
         potmaterial,
         potsize,
-        potcolor
+        potcolor,
+        flowerHeight,
+        flowerLeafs,
+        flowerRot,
+        ground,
+        drainage
     }
 }

@@ -56,8 +56,12 @@
 
                 if (value === $scope.val) {
                     $scope.currentStep++;
+<<<<<<< Updated upstream
+=======
                     $scope.$emit('handleLesson', { value: value });
+>>>>>>> Stashed changes
                     $scope.val++;
+                    $scope.$emit('handleLesson', { arg: value });
 
                     if ($scope.currentStep < $rootScope.currentLesson.items.item.length && $rootScope.currentLesson.items.item[$scope.currentStep].action === 'Show') {
                         $scope.handleAction();

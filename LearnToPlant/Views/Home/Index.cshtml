@@ -77,8 +77,11 @@
 
                     </div>
 
-                    <div id="plant" class="center-block" style="height: 350px; display: flex; align-items: flex-end">
-                        <div ng-repeat="image in pomidor" class="col-md-12" style="visibility:hidden">
+                    <div id="plant" class="center-block" style="height: 350px; display: flex">
+                        <div style="position:absolute;z-index:1;margin-top:-80px" ng-repeat="image in pomidor" class="col-md-12">
+                            <img ng-src="{{image.Path}}" />
+                        </div>
+                        <div style="position:absolute;z-index:1;" ng-repeat="image in rot" class="col-md-12">
                             <img ng-src="{{image.Path}}" />
                         </div>
                         <div ng-repeat="image in doniczka" class="col-md-12">

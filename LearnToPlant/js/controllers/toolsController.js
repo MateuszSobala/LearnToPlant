@@ -67,6 +67,16 @@
 
         $scope.$on('handleEraseItem', function (event, args) {
             $scope.images.splice(0, 1);
+            $scope.$emit('handleChangePot', { value: args.value });
+        });
+
+        $scope.$on('handleAddToPot', function (event, args) {
+            $scope.images.splice(0, 1);
+            $scope.$emit('handleChangePot', { value: args.value });
+        });
+
+        $scope.$on('handleAddToFlower', function (event, args) {
+            $scope.images.splice(0, 1);
         });
     }
 })();

@@ -10,7 +10,19 @@
         $scope.images = [];
 
         $scope.$on('handleLesson', function (event, args) {
-            $scope.$broadcast('handleEraseItem', { value: args.value });
+            if (args.value < 4) {
+                $scope.$broadcast('handleEraseItem', { value: args.value });
+            }
+            else if(args.value < 6){
+                $scope.$broadcast('handleAddToPot', { value: args.value });
+            }
+            else {
+                $scope.$broadcast('handleAddToFlower', { value: args.value });
+            }
+        });
+
+        $scope.$on('handleChangePot', function (event, args) {
+            $scope.$broadcast('handleChangePotWork', { value: args.value });
         });
 
         $scope.handleAction = function (action, value) {

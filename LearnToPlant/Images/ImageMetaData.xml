@@ -195,6 +195,123 @@
       </subImage>
     </subImages>
   </image>
+
+  <image>
+    <id>0</id>
+    <filename>roslina-5-lisci.svg</filename>
+    <description>Wysokość rośliny</description>
+    <level>1</level>
+    <component>tools</component>
+    <action></action>
+    <value>0</value>
+    <subImages>
+      <subImage>
+        <id>1</id>
+        <filename>roslina_mala.svg</filename>
+        <description>5 cm</description>
+        <level>1</level>
+        <component>tools</component>
+        <action>flowerHeight</action>
+        <value>0</value>
+      </subImage>
+      <subImage>
+        <id>2</id>
+        <filename>roslina_srednia.svg</filename>
+        <description>20 cm</description>
+        <level>1</level>
+        <component>tools</component>
+        <action>flowerHeight</action>
+        <value>6</value>
+      </subImage>
+      <subImage>
+        <id>3</id>
+        <filename>roslina_duza.svg</filename>
+        <description>50 cm</description>
+        <level>1</level>
+        <component>tools</component>
+        <action>flowerHeight</action>
+        <value>0</value>
+      </subImage>
+    </subImages>
+  </image>
+
+  <image>
+    <id>0</id>
+    <filename>roslina_srednia.svg</filename>
+    <description>Ilość liści</description>
+    <level>1</level>
+    <component>tools</component>
+    <action></action>
+    <value>0</value>
+    <subImages>
+      <subImage>
+        <id>1</id>
+        <filename>roslina-2-liscie.svg</filename>
+        <description>2 liście</description>
+        <level>1</level>
+        <component>tools</component>
+        <action>flowerLeafs</action>
+        <value>0</value>
+      </subImage>
+      <subImage>
+        <id>2</id>
+        <filename>roslina-5-lisci.svg</filename>
+        <description>5 liści</description>
+        <level>1</level>
+        <component>tools</component>
+        <action>flowerLeafs</action>
+        <value>7</value>
+      </subImage>
+      <subImage>
+        <id>3</id>
+        <filename>roslina-10-lisci.svg</filename>
+        <description>10 liści</description>
+        <level>1</level>
+        <component>tools</component>
+        <action>flowerLeafs</action>
+        <value>0</value>
+      </subImage>
+    </subImages>
+  </image>
+
+  <image>
+    <id>0</id>
+    <filename>bryla.svg</filename>
+    <description>Średnica bryły</description>
+    <level>1</level>
+    <component>tools</component>
+    <action></action>
+    <value>0</value>
+    <subImages>
+      <subImage>
+        <id>1</id>
+        <filename>bryla_korzeniowa_2.svg</filename>
+        <description>2 cm</description>
+        <level>1</level>
+        <component>tools</component>
+        <action>flowerRot</action>
+        <value>0</value>
+      </subImage>
+      <subImage>
+        <id>2</id>
+        <filename>bryla_korzeniowa_4.svg</filename>
+        <description>4 cm</description>
+        <level>1</level>
+        <component>tools</component>
+        <action>flowerRot</action>
+        <value>0</value>
+      </subImage>
+      <subImage>
+        <id>3</id>
+        <filename>bryla_korzeniowa_10.svg</filename>
+        <description>10 cm</description>
+        <level>1</level>
+        <component>tools</component>
+        <action>flowerRot</action>
+        <value>8</value>
+      </subImage>
+    </subImages>
+  </image>
   
   <image>
     <id>1</id>
@@ -259,6 +376,7 @@
     <action></action>
     <value>0</value>
   </image>
+  
   <image>
     <id>1</id>
     <filename>doniczka.svg</filename>
@@ -268,4 +386,95 @@
     <action></action>
     <value>0</value>
   </image>
+
+  <image>
+    <id>0</id>
+    <filename>pot-20-wood.svg</filename>
+    <description>doniczka</description>
+    <level>1</level>
+    <component>pot</component>
+    <action></action>
+    <value>1</value>
+  </image>
+
+  <image>
+    <id>0</id>
+    <filename>pot-40-wood.svg</filename>
+    <description>doniczka</description>
+    <level>1</level>
+    <component>pot</component>
+    <action></action>
+    <value>1</value>
+  </image>
+
+  <image>
+    <id>0</id>
+    <filename>pot-40-plastic.svg</filename>
+    <description>doniczka</description>
+    <level>1</level>
+    <component>pot</component>
+    <action></action>
+    <value>1</value>
+  </image>
+
+  <image>
+    <id>0</id>
+    <filename>keramzyt.svg</filename>
+    <description>doniczka</description>
+    <level>1</level>
+    <component>pot</component>
+    <action></action>
+    <value>1</value>
+  </image>
+  
+  <image>
+    <id>0</id>
+    <filename>torf.svg</filename>
+    <description>doniczka</description>
+    <level>1</level>
+    <component>pot</component>
+    <action></action>
+    <value>1</value>
+  </image>
+
+  <image>
+    <id>0</id>
+    <filename>roslina_srednia.svg</filename>
+    <description>doniczka</description>
+    <level>1</level>
+    <component>pot</component>
+    <action></action>
+    <value>1</value>
+  </image>
+
+  <image>
+    <id>0</id>
+    <filename>roslina_srednia.svg</filename>
+    <description>doniczka</description>
+    <level>1</level>
+    <component>pot</component>
+    <action></action>
+    <value>1</value>
+  </image>
+  
+  <image>
+    <id>0</id>
+    <filename>roslina-5-lisci.svg</filename>
+    <description>doniczka</description>
+    <level>1</level>
+    <component>pot</component>
+    <action></action>
+    <value>1</value>
+  </image>
+
+  <image>
+    <id>0</id>
+    <filename>bryla_korzeniowa_2.svg</filename>
+    <description>doniczka</description>
+    <level>1</level>
+    <component>pot</component>
+    <action></action>
+    <value>1</value>
+  </image>
+
 </images>
