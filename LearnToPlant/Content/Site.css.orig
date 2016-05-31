@@ -1,0 +1,175 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+#welcome {
+    /*position: relative;*/
+}
+
+#tutorial {
+    /*position: absolute;*/
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10%;
+}
+
+.lewo {
+    /*position: absolute;*/
+    left: 0;
+    top: 30%;
+}
+
+.prawo {
+    position: relative;
+    left: 76%;
+}
+
+.srodek {
+    /*position: absolute;*/
+    top: 30%;
+    margin: auto;
+    width: 20%;
+}
+
+#cont {
+    /*position: absolute;*/
+}
+
+.is-loading {
+  background-color: black;
+  background-image: url('../Images/common/loading.gif');
+}
+
+.is-broken {
+  background-image: url('../Images/common/broken.png');
+  background-color: #be3730;
+  width: 120px;
+}
+
+.is-loading img,
+.is-broken img {
+  opacity: 0;
+}
+
+#lessons ul {
+    text-align: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    transition: 0.5s;
+    transition-timing-function: ease;
+}
+
+#container div {
+    float: left;
+}
+
+#tools ul {
+    text-align: right;
+    list-style-type: none;
+    float:left;
+    
+}
+
+ul img {
+    height: 100px;
+    width: 100px;
+    stroke: black;
+    stroke-width: 2px;
+
+    border-radius: 15px;
+    border: 2px solid black;
+    padding: 10px; 
+    
+    transition: 0.5s;
+    transition-timing-function: ease;
+}
+
+ul img:active {
+    background: #e66862;
+}
+
+#tools ul img:hover{
+    width: 120px;
+    height:120px;
+}
+
+#lessons ul img:hover{
+    width: 120px;
+    height: 120px;
+}
+}
+
+/* HOVER STYLES */
+div.popup {
+  display: none;
+  width: 280px;
+  padding: 10px;
+  background: #eeeeee;
+  color: #000000;
+  border: 1px solid #1a1a1a;
+  font-size: 90%;
+}
+
+img.arrow {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+}
+
+#tutorial {
+    margin: auto;
+    width: 60%;
+    
+    border-radius: 15px;
+    border: 2px solid black;
+    padding: 10px; 
+}
+
+.work {
+    position:relative;
+
+}
+
+.center {
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+iframe {
+    display:block;
+    margin: 0 auto;
+    background-color: #777;
+}
+
+li.tools-toggle {
+    float:left;
+<<<<<<< Updated upstream
+}
+
+li.lessons-toggle {
+    float:right;
+    margin-left: 30px;
+    width: 70%;
+=======
+    text-align: center;
+>>>>>>> Stashed changes
+}
