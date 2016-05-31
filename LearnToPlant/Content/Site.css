@@ -125,7 +125,6 @@ ul img:active {
     width: 120px;
     height: 120px;
 }
-}
 
 /* HOVER STYLES */
 div.popup {
@@ -173,4 +172,10 @@ iframe {
 li.tools-toggle {
     float:left;
     text-align: center;
+}
+
+li.lessons-toggle {
+    float:right;
+    margin-left: 30px;
+    width: 70%;
 }
