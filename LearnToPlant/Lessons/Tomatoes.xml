@@ -172,6 +172,16 @@
         </subitem>
       </item>
       <item>
+        <action>Action</action>
+        <component action="drainage">tools</component>
+        <value>4</value>
+      </item>
+      <item>
+        <action>Action</action>
+        <component action="ground">tools</component>
+        <value>5</value>
+      </item>
+      <item>
         <id>5</id>
         <action>Show</action>
         <icon></icon>

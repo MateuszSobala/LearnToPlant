@@ -57,9 +57,6 @@
                     $scope.$emit('handleLesson', { arg: 1 });
                     $scope.val++;
                 }
-                else {
-                    $scope.currentStep++;
-                }
                 //$scope.handleAction();
             }           
         }
